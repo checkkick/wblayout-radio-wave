@@ -79,14 +79,11 @@ a {
   margin: 0 auto;
   max-width: 1300px;
   padding: 0 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
 }
 
 /* Header */
 
-.header__main {
+.header__main__flex {
   padding: 20px 0;
   display: flex;
   align-items: center;
@@ -97,7 +94,7 @@ a {
   color: #121723;
 }
 
-.header__main__nav__list {
+.header__main__flex__nav__list {
   list-style: none;
   display: flex;
   align-items: center;
@@ -105,13 +102,13 @@ a {
   gap: 60px;
 }
 
-.header__main__buttons {
+.header__main__flex__buttons {
   display: flex;
   align-items: center;
   gap: 24px;
 }
 
-.header__main__buttons__enter {
+.header__main__flex__buttons__enter {
   max-width: 104px;
   background: none;
   outline: none;
@@ -126,15 +123,18 @@ a {
 }
 
 .header__row {
-  margin-right: -14px;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
   border-top: 1px solid #e6e8ec;
   border-bottom: 1px solid #e6e8ec;
 }
 
-.header__row__themes-list {
+.header__row__flex {
+  margin-right: -14px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.header__row__flex__themes-list {
   list-style: none;
   display: flex;
   align-items: center;
@@ -147,12 +147,12 @@ a {
   margin-right: 12px;
 }
 
-.header__row__themes-list__item__link {
+.header__row__flex__themes-list__item__link {
   font-size: 16px;
   line-height: 16px;
 }
 
-.header__row__play {
+.header__row__flex__play {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -163,11 +163,11 @@ a {
   border-right: 1px solid #e6e8ec;
 }
 
-.header__row__play.last {
+.header__row__flex__play.last {
   margin-right: 52px;
 }
 
-.header__row__play__block__title {
+.header__row__flex__play__block__title {
   font-size: 12px;
   line-height: 12px;
   color: #a1a6b4;
@@ -175,12 +175,12 @@ a {
   letter-spacing: -0.3px;
 }
 
-.header__row__play__block__name {
+.header__row__flex__play__block__name {
   font-size: 16px;
   line-height: 16px;
 }
 
-.header__row__age {
+.header__row__flex__age {
   position: relative;
   font-family: "Open Sans";
   font-style: normal;
@@ -192,7 +192,7 @@ a {
   background-color: #e6e8ec;
 }
 
-.header__row__age::after {
+.header__row__flex__age::after {
   content: "12+";
   display: flex;
   align-items: center;
@@ -205,4 +205,62 @@ a {
   height: 30px;
   background-color: var(--white-color);
   border-radius: 100px;
+}
+
+.header__banner__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: url("../img/microphone.png") no-repeat center right / 350px 372px;
+  padding: 94px 475px 94px 0;
+}
+
+.header__banner__flex__title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  margin: 0 0 14px 0;
+}
+
+.header__banner__flex__title__italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.header__banner__flex__text {
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0 0 45px 0;
+}
+
+.header__banner__flex__btn {
+  padding: 25px 54px;
+  border: none;
+  outline: none;
+  background: #6d31ee;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Podcasts */
+.podcasts {
+  padding: 94px 0;
+  background-color: #e6e8ec;
+}
+
+.podcasts__block {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.podcasts__block__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  margin-bottom: 30px;
 }

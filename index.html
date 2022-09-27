@@ -12,144 +12,185 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <section class="header__main">
-          <a href="#" class="header__main__logo">
-            <img src="img/logo.svg" alt="logo" />
-          </a>
-          <nav class="header__main__nav">
-            <ul class="header__main__nav__list">
-              <li class="header__main__nav__list__item">
-                <a href="#" class="header__main__nav__list__item__link"
-                  >Подкасты</a
+      <section class="header__main">
+        <div class="container">
+          <div class="header__main__flex">
+            <a href="#" class="header__main__flex__logo">
+              <img src="img/logo.svg" alt="logo" />
+            </a>
+            <nav class="header__main__flex__nav">
+              <ul class="header__main__flex__nav__list">
+                <li class="header__main__flex__nav__list__item">
+                  <a href="#" class="header__main__flex__nav__list__item__link"
+                    >Подкасты</a
+                  >
+                </li>
+                <li class="header__main__flex__nav__list__item">
+                  <a href="#" class="header__main__flex__nav__list__item__link"
+                    >Передачи</a
+                  >
+                </li>
+                <li class="header__main__flex__nav__list__item">
+                  <a href="#" class="header__main__flex__nav__list__item__link"
+                    >Гости</a
+                  >
+                </li>
+                <li class="header__main__flex__nav__list__item">
+                  <a href="#" class="header__main__flex__nav__list__item__link"
+                    >Плейлисты</a
+                  >
+                </li>
+                <li class="header__main__flex__nav__list__item">
+                  <a href="#" class="header__main__flex__nav__list__item__link"
+                    >О нас</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="header__main__flex__buttons">
+              <div class="header__main__flex__buttons__search">
+                <svg
+                  width="24"
+                  height="24"
+                  view-box="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke="#6D31EE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.9999 21L16.6499 16.65"
+                    stroke="#6D31EE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <button class="header__main__flex__buttons__enter">Вход</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="header__row">
+        <div class="container">
+          <div class="header__row__flex">
+            <ul class="header__row__flex__themes-list">
+              <li class="header__row__flex__themes-list__item">
+                <a href="#" class="header__row__flex__themes-list__item__link"
+                  >Новости</a
                 >
               </li>
-              <li class="header__main__nav__list__item">
-                <a href="#" class="header__main__nav__list__item__link"
-                  >Передачи</a
+              <li class="header__row__flex__themes-list__item">
+                <a href="#" class="header__row__flex__themes-list__item__link"
+                  >Блоги</a
                 >
               </li>
-              <li class="header__main__nav__list__item">
-                <a href="#" class="header__main__nav__list__item__link"
-                  >Гости</a
+              <li class="header__row__flex__themes-list__item">
+                <a href="#" class="header__row__flex__themes-list__item__link"
+                  >Топы</a
                 >
               </li>
-              <li class="header__main__nav__list__item">
-                <a href="#" class="header__main__nav__list__item__link"
-                  >Плейлисты</a
+              <li class="header__row__flex__themes-list__item">
+                <a href="#" class="header__row__flex__themes-list__item__link"
+                  >Опросы</a
                 >
               </li>
-              <li class="header__main__nav__list__item">
-                <a href="#" class="header__main__nav__list__item__link"
-                  >О нас</a
+              <li class="header__row__flex__themes-list__item">
+                <a href="#" class="header__row__flex__themes-list__item__link"
+                  >Рейтинги</a
+                >
+              </li>
+              <li class="header__row__flex__themes-list__item">
+                <a href="#" class="header__row__flex__themes-list__item__link"
+                  >Реклама</a
                 >
               </li>
             </ul>
-          </nav>
-          <div class="header__main__buttons">
-            <div class="header__main__buttons__search">
-              <svg
-                width="24"
-                height="24"
-                view-box="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                  stroke="#6D31EE"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M20.9999 21L16.6499 16.65"
-                  stroke="#6D31EE"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <div class="header__row__flex__play">
+              <a href="#" click.prevent class="header__row__flex__play__logo">
+                <svg
+                  width="20"
+                  height="20"
+                  view-box="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                    fill="#A1A6B4"
+                  />
+                </svg>
+              </a>
+              <div class="header__row__flex__play__block">
+                <p class="header__row__flex__play__block__title">
+                  Ранее в эфире
+                </p>
+                <p class="header__row__flex__play__block__name">«Музыка»</p>
+              </div>
             </div>
-            <button class="header__main__buttons__enter">Вход</button>
+            <div class="header__row__flex__play last">
+              <a href="#" click.prevent class="header__row__flex__play__logo">
+                <svg
+                  width="20"
+                  height="20"
+                  view-box="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                    fill="#A1A6B4"
+                  />
+                </svg>
+              </a>
+              <div class="header__row__flex__play__block">
+                <p class="header__row__flex__play__block__title">
+                  Сейчас в эфире
+                </p>
+                <p class="header__row__flex__play__block__name">«Как так?»</p>
+              </div>
+            </div>
+            <span class="header__row__flex__age"></span>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="header__row">
-          <ul class="header__row__themes-list">
-            <li class="header__row__themes-list__item">
-              <a href="#" class="header__row__themes-list__item__link"
-                >Новости</a
-              >
-            </li>
-            <li class="header__row__themes-list__item">
-              <a href="#" class="header__row__themes-list__item__link">Блоги</a>
-            </li>
-            <li class="header__row__themes-list__item">
-              <a href="#" class="header__row__themes-list__item__link">Топы</a>
-            </li>
-            <li class="header__row__themes-list__item">
-              <a href="#" class="header__row__themes-list__item__link"
-                >Опросы</a
-              >
-            </li>
-            <li class="header__row__themes-list__item">
-              <a href="#" class="header__row__themes-list__item__link"
-                >Рейтинги</a
-              >
-            </li>
-            <li class="header__row__themes-list__item">
-              <a href="#" class="header__row__themes-list__item__link"
-                >Реклама</a
-              >
-            </li>
-          </ul>
-          <div class="header__row__play">
-            <a href="#" click.prevent class="header__row__play__logo">
-              <svg
-                width="20"
-                height="20"
-                view-box="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
-                  fill="#A1A6B4"
-                />
-              </svg>
-            </a>
-            <div class="header__row__play__block">
-              <p class="header__row__play__block__title">Ранее в эфире</p>
-              <p class="header__row__play__block__name">«Музыка»</p>
-            </div>
+      <section class="header__banner">
+        <div class="container">
+          <div class="header__banner__flex">
+            <h1 class="header__banner__flex__title">
+              Радио
+              <span class="header__banner__flex__title__italic">W-Wawe</span>
+            </h1>
+            <p class="header__banner__flex__text">
+              Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были изданием,
+              а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим
+              о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь,
+              помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое
+              другое:)
+            </p>
+            <button class="header__banner__flex__btn">Слушать эфир</button>
           </div>
-          <div class="header__row__play last">
-            <a href="#" click.prevent class="header__row__play__logo">
-              <svg
-                width="20"
-                height="20"
-                view-box="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
-                  fill="#A1A6B4"
-                />
-              </svg>
-            </a>
-            <div class="header__row__play__block">
-              <p class="header__row__play__block__title">Сейчас в эфире</p>
-              <p class="header__row__play__block__name">«Как так?»</p>
-            </div>
-          </div>
-          <span class="header__row__age"></span>
-        </section>
-
-        <section class="header__banner"></section>
-      </div>
+        </div>
+      </section>
     </header>
+
+    <main class="main">
+      <section class="podcasts">
+        <div class="container">
+          <div class="podcasts__block">
+            <h2 class="podcasts__block__title">Подкасты</h2>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="script/index.js"></script>
   </body>

@@ -252,15 +252,92 @@ a {
   background-color: #e6e8ec;
 }
 
-.podcasts__block {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.podcasts__block__title {
+.podcasts__title {
   font-weight: 400;
   font-size: 48px;
   line-height: 100%;
   margin-bottom: 30px;
+}
+
+.podcasts__block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  gap: 30px;
+}
+
+.podcasts__block__item {
+  position: relative;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  width: calc(50% - 15px);
+}
+
+.podcasts__block__item__img {
+  height: 100%;
+  max-width: 112px;
+}
+
+.podcasts__block__item__about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.podcasts__block__item__about__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 33px 24px 30px;
+}
+
+.podcasts__block__item__about__row__description__time {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 8px;
+}
+
+.podcasts__block__item__about__row__description__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+
+.podcasts__block__item__about__row__description__subtitle {
+  font-size: 16px;
+  line-height: 16px;
+  color: #a1a6b4;
+}
+
+.podcasts__block__item__about__counters {
+  display: flex;
+  gap: 30px;
+  padding: 10px 33px 9px 30px;
+  border-top: 1px solid #e6e8ec;
+}
+
+.podcasts__block__item__about__counters__plays {
+  font-size: 16px;
+  line-height: 16px;
+  color: #a1a6b4;
+  padding-left: 16px;
+  background: url("../img/podcasts-plays.svg") no-repeat left center / 10px 13px;
+}
+
+.podcasts__block__item__about__counters__likes {
+  font-size: 16px;
+  line-height: 16px;
+  color: #a1a6b4;
+  padding-left: 19px;
+  background: url("../img/podcasts-likes.svg") no-repeat left center / 13px 12px;
+}
+
+.podcasts__block__item__about__counters__shares {
+  font-size: 16px;
+  line-height: 16px;
+  color: #a1a6b4;
+  padding-left: 18px;
+  background: url("../img/podcasts-plays.svg") no-repeat left center / 12px 13px;
 }

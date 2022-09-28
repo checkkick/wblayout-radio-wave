@@ -108,7 +108,12 @@ a {
   gap: 24px;
 }
 
+.header__main__flex__buttons__search {
+  cursor: pointer;
+}
+
 .header__main__flex__buttons__enter {
+  cursor: pointer;
   max-width: 104px;
   background: none;
   outline: none;
@@ -234,6 +239,7 @@ a {
 }
 
 .header__banner__flex__btn {
+  cursor: pointer;
   padding: 25px 54px;
   border: none;
   outline: none;
@@ -259,12 +265,29 @@ a {
   margin-bottom: 30px;
 }
 
+.podcasts__btn {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  background: none;
+  padding: 25px 54px;
+  border: 2px solid #6d31ee;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #6d31ee;
+}
+
 .podcasts__block {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: stretch;
   gap: 30px;
+  margin-bottom: 60px;
 }
 
 .podcasts__block__item {
@@ -273,6 +296,17 @@ a {
   display: flex;
   align-items: center;
   width: calc(50% - 15px);
+}
+
+.podcasts__block__item__date {
+  padding: 3px 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  background-color: #e6e8ec;
 }
 
 .podcasts__block__item__img {
@@ -290,6 +324,11 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 24px 33px 24px 30px;
+}
+
+.podcasts__block__item__about__row__play-btn {
+  cursor: pointer;
+  padding-top: 9px;
 }
 
 .podcasts__block__item__about__row__description__time {

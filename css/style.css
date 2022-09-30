@@ -906,6 +906,7 @@ a {
 }
 
 .playlists__row__right__item__about {
+  height: 100%;
   width: 100%;
   padding: 16px;
   border: 1px solid #e6e8ec;
@@ -934,4 +935,97 @@ a {
   display: flex;
   align-items: center;
   background-color: #121723;
+}
+
+/* Radio */
+.radio {
+  padding: 94px 0;
+  background-color: #292e39;
+}
+
+.radio__row {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.radio__row__model {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 640px;
+  max-height: 562px;
+}
+
+.radio__row__model::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background: url("../img/new-label.svg") no-repeat center / 100%;
+}
+
+.radio__row__model__image {
+  width: 100%;
+}
+
+.radio__row__about {
+  max-width: 445px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.radio__row__about__title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: #f0d288;
+  padding-bottom: 29px;
+  background: url("../img/radio-title-line.svg") no-repeat bottom / 100%;
+  margin-bottom: 19px;
+}
+
+.radio__row__about__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.radio__row__about__text:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.radio__row__about__price {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.radio__row__about__btn {
+  align-self: flex-start;
+  background: none;
+  outline: none;
+  border: 2px solid #f0d288;
+  border-radius: 100px;
+  padding: 25px 13.5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #f0d288;
+}
+
+.radio__row__about__btn__title {
+  padding-left: 28px;
+  background: url("../img/ya-market.svg") no-repeat left -1px / 20px 20px;
 }

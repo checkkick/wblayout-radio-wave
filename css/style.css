@@ -125,6 +125,19 @@ a {
   font-size: 16px;
   line-height: 16px;
   color: #121723;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+.header__main__flex__buttons__enter:hover {
+  background-color: #121723;
+  color: #ffffff;
+}
+.header__main__flex__buttons__enter:focus-visible {
+  background-color: #aa9dfa;
+}
+.header__main__flex__buttons__enter:active {
+  background-color: #4f28a5;
+  border-color: #4f28a5;
 }
 
 .header__row {
@@ -250,8 +263,18 @@ a {
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+  transition: background-color 0.2s ease-in-out, outline 0.2s ease-in-out;
 }
-
+.header__banner__flex__btn:hover {
+  background-color: #aa9dfa;
+}
+.header__banner__flex__btn:focus-visible {
+  background-color: #aa9dfa;
+  outline: 2px solid #4f28a5;
+}
+.header__banner__flex__btn:active {
+  background-color: #4f28a5;
+}
 /* Podcasts */
 .podcasts {
   padding: 94px 0;
@@ -279,6 +302,22 @@ a {
   line-height: 20px;
   text-align: center;
   color: #6d31ee;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+.podcasts__btn:hover {
+  color: #ffffff;
+  border-color: #6d31ee;
+  background-color: #6d31ee;
+}
+.podcasts__btn:focus-visible {
+  color: #ffffff;
+  background-color: #aa9dfa;
+}
+.podcasts__btn:active {
+  color: #ffffff;
+  border-color: #4f28a5;
+  background-color: #4f28a5;
 }
 
 .podcasts__block {
@@ -530,6 +569,19 @@ a {
   line-height: 16px;
   color: #121723;
   margin-bottom: 12px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+.shows__row__archive__bottom__btn:hover {
+  background-color: #121723;
+  color: #ffffff;
+}
+.shows__row__archive__bottom__btn:focus-visible {
+  background-color: #aa9dfa;
+}
+.shows__row__archive__bottom__btn:active {
+  background-color: #4f28a5;
+  border-color: #4f28a5;
 }
 
 .shows__row__archive__bottom__text {
@@ -726,6 +778,22 @@ a {
   color: #aa9dfa;
   border: 2px solid #aa9dfa;
   border-radius: 77px;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+.guests__row__item-about__user__btn:hover {
+  color: #ffffff;
+  background-color: #aa9dfa;
+}
+.guests__row__item-about__user__btn:focus-visible {
+  color: #ffffff;
+  background-color: #6d31ee;
+  border-color: #6d31ee;
+}
+.guests__row__item-about__user__btn:active {
+  color: #ffffff;
+  border-color: #4f28a5;
+  background-color: #4f28a5;
 }
 
 /* Playlists */
@@ -1011,6 +1079,7 @@ a {
 }
 
 .radio__row__about__btn {
+  cursor: pointer;
   align-self: flex-start;
   background: none;
   outline: none;
@@ -1021,11 +1090,31 @@ a {
   font-size: 20px;
   line-height: 100%;
   color: #f0d288;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+.radio__row__about__btn:hover {
+  background-color: #f0d288;
+  color: #121723;
+}
+.radio__row__about__btn:focus-visible {
+  background-color: #bb973e;
+  color: #121723;
+}
+.radio__row__about__btn:active {
+  border-color: #bb973e;
+  background-color: #bb973e;
+  color: #121723;
 }
 
 .radio__row__about__btn__title {
   padding-left: 28px;
   background: url("../img/ya-market.svg") no-repeat left -1px / 20px 20px;
+  transition: background 0.2s ease-in-out;
+}
+.radio__row__about__btn:hover .radio__row__about__btn__title,
+.radio__row__about__btn:active .radio__row__about__btn__title {
+  background: url("../img/ya-market-invert.svg") no-repeat left -1px / 20px 20px;
 }
 
 /* About-Us */
@@ -1194,6 +1283,17 @@ a {
   font-size: 20px;
   line-height: 20px;
   color: #ffffff;
+  transition: background-color 0.2s ease-in-out, outline 0.2s ease-in-out;
+}
+.about-us__main__form__btn:hover {
+  background-color: #aa9dfa;
+}
+.about-us__main__form__btn:focus-visible {
+  background-color: #aa9dfa;
+  outline: 2px solid #4f28a5;
+}
+.about-us__main__form__btn:active {
+  background-color: #4f28a5;
 }
 
 .about-us__main__form__agreement-checkbox {

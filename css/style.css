@@ -851,6 +851,7 @@ a {
   + .playlists__row__left__radio__label,
 .playlists__row__left__radio__input:not(:checked)
   + .playlists__row__left__radio__label {
+  outline: none;
   position: relative;
   padding-left: 40px;
   cursor: pointer;
@@ -875,11 +876,28 @@ a {
   border: 2px solid #a1a6b4;
   border-radius: 100%;
   background-color: #fff;
-  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.playlists__row__left__radio__input:checked
+  + .playlists__row__left__radio__label:hover:before,
+.playlists__row__left__radio__input:not(:checked)
+  + .playlists__row__left__radio__label:hover:before {
+  border-color: #6d31ee;
+}
+.playlists__row__left__radio__input:checked
+  + .playlists__row__left__radio__label:focus-visible:before,
+.playlists__row__left__radio__input:not(:checked)
+  + .playlists__row__left__radio__label:focus-visible:before {
+  background-color: #d2d5dd;
+  border-color: #6d31ee;
 }
 
 .playlists__row__left__radio__input:checked
-  + .playlists__row__left__radio__label:before {
+  + .playlists__row__left__radio__label:before,
+.playlists__row__left__radio__input:checked
+  + .playlists__row__left__radio__label:active:before,
+.playlists__row__left__radio__input:not(:checked)
+  + .playlists__row__left__radio__label:active:before {
   background-color: #6d31ee;
   border-color: #6d31ee;
 }
@@ -908,7 +926,9 @@ a {
 }
 
 .playlists__row__left__radio__input:checked
-  + .playlists__row__left__radio__label:after {
+  + .playlists__row__left__radio__label:after,
+.playlists__row__left__radio__input
+  + .playlists__row__left__radio__label:active:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);

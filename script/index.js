@@ -6,3 +6,15 @@ const choices = new Choices(element, {
   placeholder: true,
   itemSelectText: "",
 });
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

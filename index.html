@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/choices.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <title>Radio W-Wave</title>
   </head>
   <body>
@@ -1481,9 +1482,167 @@
           </div>
         </div>
       </section>
+
+      <section class="about-us">
+        <div class="container">
+          <div class="about-us__main">
+            <div class="about-us__main__description">
+              <h2 class="about-us__main__description__title">О нас</h2>
+              <p class="about-us__main__description__subtitle">
+                Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
+              </p>
+              <p class="about-us__main__description__text">
+                Друзья, мы будем очень рады, если вы поможете стать нам лучше.
+                Нам важен каждый слушатель, поэтому вы можете поделиться
+                обратной связью о наших предеачах, темах, подборках и вообще
+                обо всём! Это можно сделать либо написав нам в форме ниже,
+                либо кликнув на наши соцсети в подвале сайта. Спасибо!
+                Услышимся!:)
+              </p>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-slide__image"
+                    src="img/about-us-photo-1.png"
+                    alt="photo"
+                  />
+                  <h3 class="swiper-slide__title">Дмитрий Гутенберг</h3>
+                  <p class="swiper-slide__text">
+                    Эксперт (ну, почти) по всем вопросам (почти)
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-slide__image"
+                    src="img/about-us-photo-2.png"
+                    alt="photo"
+                  />
+                  <h3 class="swiper-slide__title">Анна Васильева</h3>
+                  <p class="swiper-slide__text">
+                    Как я здесь оказалась? А главное — зачем?
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-slide__image"
+                    src="img/about-us-photo-3.png"
+                    alt="photo"
+                  />
+                  <h3 class="swiper-slide__title">Пётр Дмитриевский</h3>
+                  <p class="swiper-slide__text">
+                    Господа! Внимание! Благодарю за внимание!
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-slide__image"
+                    src="img/about-us-photo-4.png"
+                    alt="photo"
+                  />
+                  <h3 class="swiper-slide__title">Татьяна Флеганова</h3>
+                  <p class="swiper-slide__text">
+                    Одна я в пальто стою красивая, а вокруг…
+                  </p>
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <svg
+                  width="42"
+                  height="42"
+                  view-box="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    r="20"
+                    transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 21 21)"
+                    stroke="#A1A6B4"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M23 29L15 21L23 13"
+                    stroke="#A1A6B4"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  width="42"
+                  height="42"
+                  view-box="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="20"
+                    transform="rotate(-90 21 21)"
+                    stroke="#A1A6B4"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M19 29L27 21L19 13"
+                    stroke="#A1A6B4"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <form action="" class="about-us__main__form">
+              <textarea
+                name=""
+                id=""
+                class="about-us__main__form__textarea"
+                placeholder="Что скажете?"
+              ></textarea>
+              <div class="about-us__main__form__row">
+                <input
+                  name="fio"
+                  type="text"
+                  class="about-us__main__form__row__name"
+                  placeholder="Имя"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="about-us__main__form__row__email"
+                  placeholder="Email"
+                />
+              </div>
+              <button type="submit" class="about-us__main__form__btn">
+                Отправить
+              </button>
+              <input
+                class="about-us__main__form__agreement-checkbox"
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+              />
+              <label
+                class="about-us__main__form__agreement-label"
+                for="agreement"
+                >Согласен на обработку персональных данных</label
+              >
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="script/choices.min.js"></script>
+    <script src="script/swiper-bundle.min.js"></script>
     <script src="script/index.js"></script>
   </body>
 </html>

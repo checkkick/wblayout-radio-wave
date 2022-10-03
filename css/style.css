@@ -1029,3 +1029,226 @@ a {
   padding-left: 28px;
   background: url("../img/ya-market.svg") no-repeat left -1px / 20px 20px;
 }
+
+/* About-Us */
+.about-us {
+  padding: 94px 0;
+  background-color: #121723;
+}
+
+.about-us__main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.about-us__main__description {
+  width: 100%;
+  padding-right: 475px;
+  background: url("../img/about-us-background.svg") no-repeat center right /
+    445px 290px;
+}
+
+.about-us__main__description__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.about-us__main__description__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #a1a6b4;
+  margin-bottom: 8px;
+}
+
+.about-us__main__description__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #a1a6b4;
+  letter-spacing: -0.3px;
+}
+
+.about-us__main .swiper {
+  position: static;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  max-width: 255px;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-slide__image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.swiper-slide__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.swiper-slide__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a1a6b4;
+}
+
+.swiper .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  top: 450px;
+  right: -75px;
+}
+
+.swiper .swiper-button-prev {
+  width: 42px;
+  height: 42px;
+  top: 450px;
+  left: -75px;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  content: none;
+}
+
+.about-us__main__form {
+  max-width: 920px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-us__main__form__textarea {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  resize: none;
+  height: 150px;
+  padding: 32px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.about-us__main__form__textarea::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #a1a6b4;
+}
+
+.about-us__main__form__row {
+  width: 100%;
+  gap: 30px;
+  display: flex;
+}
+
+.about-us__main__form__row__name,
+.about-us__main__form__row__email {
+  width: 100%;
+  outline: none;
+  padding: 25px 32px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.about-us__main__form__row__name::placeholder,
+.about-us__main__form__row__email::placeholder {
+  font-size: 20px;
+  line-height: 20px;
+  color: #a1a6b4;
+}
+
+.about-us__main__form__btn {
+  cursor: pointer;
+  padding: 25px 54px;
+  outline: none;
+  border: none;
+  background-color: #6d31ee;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.about-us__main__form__agreement-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.about-us__main__form__agreement-checkbox
+  + .about-us__main__form__agreement-label {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  user-select: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.about-us__main__form__agreement-checkbox
+  + .about-us__main__form__agreement-label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #ffffff;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.about-us__main__form__agreement-checkbox:not(:disabled):not(:checked)
+  + .about-us__main__form__agreement-label:hover::before {
+  border-color: #aa9dfa;
+}
+
+.about-us__main__form__agreement-checkbox:not(:disabled):active
+  + .about-us__main__form__agreement-label::before {
+  background-color: #aa9dfa;
+  border-color: #aa9dfa;
+}
+
+.about-us__main__form__agreement-checkbox:focus
+  + .about-us__main__form__agreement-label::before {
+  outline: 1px solid #aa9dfa;
+  outline-offset: 1px;
+}
+
+.about-us__main__form__agreement-checkbox:checked
+  + .about-us__main__form__agreement-label::before {
+  background-image: url("../img/check.svg");
+}

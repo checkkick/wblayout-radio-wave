@@ -88,10 +88,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 80px;
+  gap: 70px;
   font-size: 20px;
   line-height: 20px;
   color: #121723;
+}
+
+.header__main__flex__logo {
+  outline: none;
+}
+.header__main__flex__logo:focus-visible {
+  outline: 2px solid #aa9dfa;
+  outline-offset: 2px;
 }
 
 .header__main__flex__nav__list {
@@ -99,7 +107,23 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 40px;
+}
+
+.header__main__flex__nav__list__item__link {
+  outline: none;
+  padding: 4px 10px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.header__main__flex__nav__list__item__link:hover {
+  color: #6d31ee;
+}
+.header__main__flex__nav__list__item__link:focus-visible {
+  background-color: #aa9dfa;
+  color: #ffffff;
+}
+.header__main__flex__nav__list__item__link:active {
+  color: #4f28a5;
 }
 
 .header__main__flex__buttons {
@@ -110,6 +134,17 @@ a {
 
 .header__main__flex__buttons__search {
   cursor: pointer;
+  outline: none;
+}
+.header__main__flex__buttons__search svg path {
+  transition: stroke 0.2s ease-in-out;
+}
+.header__main__flex__buttons__search:hover svg path,
+.header__main__flex__buttons__search:focus-visible svg path {
+  stroke: #aa9dfa;
+}
+.header__main__flex__buttons__search:active svg path {
+  stroke: #4f28a5;
 }
 
 .header__main__flex__buttons__enter {
@@ -157,17 +192,28 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 53px;
+  gap: 33px;
   padding-right: 52px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 2px 2px 10px -10px;
   border-right: 1px solid #e6e8ec;
-  margin-right: 12px;
 }
 
 .header__row__flex__themes-list__item__link {
   font-size: 16px;
   line-height: 16px;
+  outline: none;
+  padding: 4px 10px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.header__row__flex__themes-list__item__link:hover {
+  color: #6d31ee;
+}
+.header__row__flex__themes-list__item__link:focus-visible {
+  background-color: #aa9dfa;
+  color: #ffffff;
+}
+.header__row__flex__themes-list__item__link:active {
+  color: #4f28a5;
 }
 
 .header__row__flex__play {
@@ -181,6 +227,22 @@ a {
   border-right: 1px solid #e6e8ec;
 }
 
+.header__row__flex__play__logo {
+  outline: none;
+}
+.header__row__flex__play__logo svg path {
+  transition: fill 0.2s ease-in-out;
+}
+.header__row__flex__play__logo:hover svg path {
+  fill: #6d31ee;
+}
+.header__row__flex__play__logo:focus-visible svg path {
+  fill: #aa9dfa;
+}
+.header__row__flex__play__logo:active svg path {
+  fill: #4f28a5;
+}
+
 .header__row__flex__play.last {
   margin-right: 52px;
 }
@@ -190,7 +252,8 @@ a {
   line-height: 12px;
   color: #a1a6b4;
   margin-bottom: 5px;
-  letter-spacing: -0.3px;
+  margin-top: -5px;
+  letter-spacing: -0.5px;
 }
 
 .header__row__flex__play__block__name {
@@ -327,6 +390,7 @@ a {
   justify-content: stretch;
   gap: 30px;
   margin-bottom: 55px;
+  margin-right: -10px;
 }
 
 .podcasts__block__item {
@@ -366,8 +430,34 @@ a {
 }
 
 .podcasts__block__item__about__row__play-btn {
+  outline: none;
   cursor: pointer;
   padding-top: 7px;
+}
+.podcasts__block__item__about__row__play-btn svg circle {
+  transition: stroke 0.2s ease-in-out, fill 0.2s ease-in-out;
+}
+.podcasts__block__item__about__row__play-btn svg path {
+  transition: fill 0.2s ease-in-out;
+}
+.podcasts__block__item__about__row__play-btn:hover svg circle {
+  stroke: #6d31ee;
+}
+.podcasts__block__item__about__row__play-btn:hover svg path {
+  fill: #6d31ee;
+}
+.podcasts__block__item__about__row__play-btn:focus-visible svg circle {
+  stroke: #aa9dfa;
+}
+.podcasts__block__item__about__row__play-btn:focus-visible svg path {
+  fill: #aa9dfa;
+}
+.podcasts__block__item__about__row__play-btn:active svg circle {
+  stroke: #4f28a5;
+  fill: #4f28a5;
+}
+.podcasts__block__item__about__row__play-btn:active svg path {
+  fill: #fff;
 }
 
 .podcasts__block__item__about__row__description__time {
@@ -392,34 +482,82 @@ a {
 .podcasts__block__item__about__counters {
   display: flex;
   align-items: center;
-  gap: 30px;
-  padding: 10px 33px 6px 30px;
+  gap: 28px;
+  padding: 8px 33px 6px 30px;
   border-top: 1px solid #e6e8ec;
 }
 
 .podcasts__block__item__about__counters__plays {
+  outline: none;
   font-size: 16px;
   line-height: 16px;
   color: #a1a6b4;
-  padding-left: 16px;
-  background: url("../img/podcasts-plays.svg") no-repeat left center / 10px 13px;
+  display: flex;
+  align-items: center;
+  vertical-align: bottom;
+  gap: 6px;
+  padding: 2px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .podcasts__block__item__about__counters__likes {
+  outline: none;
   font-size: 16px;
   line-height: 16px;
   color: #a1a6b4;
-  padding-left: 19px;
-  background: url("../img/podcasts-likes.svg") no-repeat left center / 13px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .podcasts__block__item__about__counters__shares {
+  outline: none;
   font-size: 16px;
   line-height: 16px;
   color: #a1a6b4;
-  padding-left: 18px;
-  background: url("../img/podcasts-shares.svg") no-repeat left center / 12px
-    13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.podcasts__block__item__about__counters__plays:hover,
+.podcasts__block__item__about__counters__likes:hover,
+.podcasts__block__item__about__counters__shares:hover {
+  color: #6d31ee;
+}
+.podcasts__block__item__about__counters__plays:focus-visible,
+.podcasts__block__item__about__counters__likes:focus-visible,
+.podcasts__block__item__about__counters__shares:focus-visible {
+  color: #ffffff;
+  background-color: #aa9dfa;
+}
+.podcasts__block__item__about__counters__plays:active,
+.podcasts__block__item__about__counters__likes:active,
+.podcasts__block__item__about__counters__shares:active {
+  color: #4f28a5;
+}
+.podcasts__block__item__about__counters__plays svg path,
+.podcasts__block__item__about__counters__likes svg path,
+.podcasts__block__item__about__counters__shares svg path {
+  transition: fill 0.2s ease-in-out;
+}
+.podcasts__block__item__about__counters__plays:hover svg path,
+.podcasts__block__item__about__counters__likes:hover svg path,
+.podcasts__block__item__about__counters__shares:hover svg path {
+  fill: #6d31ee;
+}
+.podcasts__block__item__about__counters__plays:focus-visible svg path,
+.podcasts__block__item__about__counters__likes:focus-visible svg path,
+.podcasts__block__item__about__counters__shares:focus-visible svg path {
+  fill: #ffffff;
+}
+.podcasts__block__item__about__counters__plays:active svg path,
+.podcasts__block__item__about__counters__likes:active svg path,
+.podcasts__block__item__about__counters__shares:active svg path {
+  fill: #4f28a5;
 }
 /* Shows */
 .shows {
@@ -560,7 +698,7 @@ a {
   cursor: pointer;
   background: none;
   outline: none;
-  padding: 12px 56px;
+  padding: 10px 56px;
   border: 2px solid #121723;
   border-radius: 77px;
   font-style: normal;
@@ -602,20 +740,57 @@ a {
 }
 
 .shows__row__more__item {
+  outline: none;
+  cursor: pointer;
   width: calc((100% / 3) - (30px * 2) / 3);
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: outline 0.2s ease-in-out;
+}
+.shows__row__more__item:hover .shows__row__more__item__image,
+.shows__row__more__item:active .shows__row__more__item__image {
+  opacity: 0.7;
+}
+.shows__row__more__item:hover .shows__row__more__item__about__link {
+  color: #6d31ee;
+}
+.shows__row__more__item:hover .shows__row__more__item__about__link svg path {
+  fill: #6d31ee;
+}
+.shows__row__more__item:focus-visible {
+  outline: 1px solid #6d31ee;
+  outline-offset: 7px;
+}
+.shows__row__more__item:focus-visible .shows__row__more__item__about__link {
+  color: #ffffff;
+  background-color: #aa9dfa;
+}
+.shows__row__more__item:focus-visible
+  .shows__row__more__item__about__link
+  svg
+  path {
+  fill: #ffffff;
+}
+.shows__row__more__item:active .shows__row__more__item__about__link {
+  color: #4f28a5;
+}
+.shows__row__more__item:active .shows__row__more__item__about__link svg path {
+  fill: #4f28a5;
 }
 
 .shows__row__more__item__image {
   max-height: 148px;
   width: 100%;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .shows__row__more__item__about {
   width: 100%;
-  padding: 20px 60px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 60px 18px 16px;
   border: 1px solid #e6e8ec;
   border-top: none;
 }
@@ -632,18 +807,25 @@ a {
   font-size: 12px;
   line-height: 12px;
   color: #a1a6b4;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .shows__row__more__item__about__link {
+  cursor: pointer;
+  outline: none;
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  padding-right: 24px;
-  background: url("../img/arrow-right.svg") no-repeat center right / 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-
+.shows__row__more__item__about__link svg path {
+  transition: fill 0.2s ease-in-out;
+}
 /* Guests */
 
 .guests {
@@ -748,6 +930,22 @@ a {
   align-items: center;
   gap: 30px;
   margin-bottom: 12px;
+}
+
+.guests__row__item-about__user__social__link {
+  outline: none;
+}
+.guests__row__item-about__user__social__link svg path {
+  transition: fill 0.2s ease-in-out;
+}
+.guests__row__item-about__user__social__link:hover svg path {
+  fill: #6d31ee;
+}
+.guests__row__item-about__user__social__link:focus-visible svg path {
+  fill: #aa9dfa;
+}
+.guests__row__item-about__user__social__link:active svg path {
+  fill: #4f28a5;
 }
 
 .guests__row__item-about__user__name {
@@ -979,11 +1177,69 @@ a {
 }
 
 .playlists__row__right__item {
+  outline: none;
+  cursor: pointer;
   position: relative;
   width: calc((100% / 4) - (30px * 3) / 4);
   display: flex;
   align-items: stretch;
   flex-direction: column;
+}
+.playlists__row__right__item::before {
+  content: "";
+  z-index: 2;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/playlists-play-btn.svg") no-repeat center 52px;
+  transition: opacity 0.2s ease-in-out;
+}
+.playlists__row__right__item::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #121723;
+  transition: opacity 0.2s ease-in-out;
+}
+.playlists__row__right__item:hover::before,
+.playlists__row__right__item:focus-visible::before,
+.playlists__row__right__item:active::before {
+  opacity: 1;
+}
+.playlists__row__right__item:hover::after,
+.playlists__row__right__item:focus-visible::after,
+.playlists__row__right__item:active::after {
+  opacity: 0.8;
+}
+.playlists__row__right__item:hover .playlists__row__right__item__about {
+  background-color: #6d31ee;
+}
+.playlists__row__right__item:hover .playlists__row__right__item__about__title,
+.playlists__row__right__item:hover
+  .playlists__row__right__item__about__subtitle,
+.playlists__row__right__item:active .playlists__row__right__item__about__title,
+.playlists__row__right__item:active
+  .playlists__row__right__item__about__subtitle {
+  color: #ffffff;
+}
+.playlists__row__right__item:focus-visible .playlists__row__right__item__about {
+  background-color: #aa9dfa;
+}
+.playlists__row__right__item:focus-visible
+  .playlists__row__right__item__about__title,
+.playlists__row__right__item:focus-visible
+  .playlists__row__right__item__about__subtitle {
+  color: #121723;
+}
+.playlists__row__right__item:active .playlists__row__right__item__about {
+  background-color: #4f28a5;
 }
 
 .playlists__row__right__item__image {
@@ -992,11 +1248,14 @@ a {
 }
 
 .playlists__row__right__item__about {
+  z-index: 1;
   height: 100%;
   width: 100%;
   padding: 16px;
   border: 1px solid #e6e8ec;
+  background-color: #ffffff;
   border-top: none;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .playlists__row__right__item__about__title {
@@ -1004,6 +1263,7 @@ a {
   font-size: 16px;
   line-height: 16px;
   margin-bottom: 4px;
+  transition: color 0.2s ease-in-out;
 }
 
 .playlists__row__right__item__about__subtitle {
@@ -1011,6 +1271,7 @@ a {
   font-size: 12px;
   line-height: 12px;
   color: #a1a6b4;
+  transition: color 0.2s ease-in-out;
 }
 
 .playlists__row__right__item__region {
@@ -1216,6 +1477,7 @@ a {
 }
 
 .swiper .swiper-button-next {
+  outline: none;
   width: 42px;
   height: 42px;
   top: 450px;
@@ -1223,10 +1485,37 @@ a {
 }
 
 .swiper .swiper-button-prev {
+  outline: none;
   width: 42px;
   height: 42px;
   top: 450px;
   left: -75px;
+}
+
+.swiper-button-next svg path,
+.swiper-button-prev svg path,
+.swiper-button-next svg circle,
+.swiper-button-prev svg circle {
+  transition: stroke 0.2s ease-in-out, fill 0.2s ease-in-out;
+}
+.swiper-button-next:hover svg path,
+.swiper-button-prev:hover svg path,
+.swiper-button-next:hover svg circle,
+.swiper-button-prev:hover svg circle {
+  stroke: #aa9dfa;
+}
+.swiper-button-next:focus-visible svg circle,
+.swiper-button-prev:focus-visible svg circle {
+  fill: #4f28a5;
+}
+.swiper-button-next:active svg circle,
+.swiper-button-prev:active svg circle {
+  fill: #aa9dfa;
+  stroke: #aa9dfa;
+}
+.swiper-button-next:active svg path,
+.swiper-button-prev:active svg path {
+  stroke: #ffffff;
 }
 
 .swiper .swiper-button-prev::after,
@@ -1256,13 +1545,24 @@ a {
   font-size: 20px;
   line-height: 20px;
   color: #ffffff;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-
 .about-us__main__form__textarea::placeholder {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   color: #a1a6b4;
+}
+.about-us__main__form__textarea:hover {
+  background-color: #292e39;
+}
+.about-us__main__form__textarea:focus-visible {
+  background-color: #292e39;
+  border-color: #aa9dfa;
+}
+.about-us__main__form__textarea:active {
+  background-color: transparent;
+  border-color: #ffffff;
 }
 
 .about-us__main__form__row {
@@ -1271,8 +1571,7 @@ a {
   display: flex;
 }
 
-.about-us__main__form__row__name,
-.about-us__main__form__row__email {
+.about-us__main__form__row__input {
   width: 100%;
   outline: none;
   padding: 25px 32px;
@@ -1283,13 +1582,23 @@ a {
   font-size: 20px;
   line-height: 20px;
   color: #ffffff;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-
-.about-us__main__form__row__name::placeholder,
-.about-us__main__form__row__email::placeholder {
+.about-us__main__form__row__input::placeholder {
   font-size: 20px;
   line-height: 20px;
   color: #a1a6b4;
+}
+.about-us__main__form__row__input:hover {
+  background-color: #292e39;
+}
+.about-us__main__form__row__input:focus-visible {
+  background-color: #292e39;
+  border-color: #aa9dfa;
+}
+.about-us__main__form__row__input:active {
+  background-color: transparent;
+  border-color: #ffffff;
 }
 
 .about-us__main__form__btn {
@@ -1382,7 +1691,7 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin-bottom: 94px;
+  margin-bottom: 90px;
 }
 
 .footer__row__links {
@@ -1391,24 +1700,49 @@ a {
   gap: 20px;
 }
 
+.footer__row__links__logo {
+  outline: none;
+}
+.footer__row__links__logo:focus-visible {
+  outline: 2px solid #aa9dfa;
+  outline-offset: 2px;
+}
+
 .footer__row__links__social {
   display: flex;
   align-items: center;
   gap: 21px;
 }
 
+.footer__row__links__social__logo {
+  outline: none;
+}
+.footer__row__links__social__logo svg path {
+  transition: fill 0.2s ease-in-out;
+}
+.footer__row__links__social__logo:hover svg path {
+  fill: #6d31ee;
+}
+.footer__row__links__social__logo:focus-visible svg path {
+  fill: #aa9dfa;
+}
+.footer__row__links__social__logo:active svg path {
+  fill: #4f28a5;
+}
+
 .footer__row__nav__list {
+  margin-top: -4px;
   max-width: 445px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: baseline;
   align-items: baseline;
-  gap: 20px 109px;
+  gap: 16px 89px;
 }
 
 .footer__row__nav__list__item {
-  width: calc((100% / 3) - (109px * 2) / 3);
+  width: calc((100% / 3) - (89px * 2) / 3);
 }
 
 .footer__row__nav__list__item__link {
@@ -1416,6 +1750,19 @@ a {
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
+  outline: none;
+  padding: 4px 10px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.footer__row__nav__list__item__link:hover {
+  color: #6d31ee;
+}
+.footer__row__nav__list__item__link:focus-visible {
+  background-color: #aa9dfa;
+  color: #ffffff;
+}
+.footer__row__nav__list__item__link:active {
+  color: #4f28a5;
 }
 
 .footer__copyright {

@@ -871,10 +871,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-.guests__row__accordion-list__item {
+.guests__row__accordion-list__item__block {
   cursor: pointer;
+  outline: none;
   width: 100%;
   display: flex;
   align-items: center;
@@ -885,12 +887,104 @@ a {
   border-bottom: 1px solid #a1a6b4;
   margin-bottom: -1px;
 }
+.guests__row__accordion-list__item__block svg {
+  transition: transform 0.3s ease-in-out;
+}
+.guests__row__accordion-list__item__block svg circle,
+.guests__row__accordion-list__item__block svg path {
+  transition: stroke 0.2s ease-in-out, fill 0.2s ease-in-out;
+}
+.guests__row__accordion-list__item__block:hover
+  .guests__row__accordion-list__item__block__title {
+  color: #aa9dfa;
+}
+.guests__row__accordion-list__item__block:hover svg circle,
+.guests__row__accordion-list__item__block:hover svg path {
+  stroke: #aa9dfa;
+}
+.guests__row__accordion-list__item__block:focus-visible {
+  background-color: #292e39;
+}
+.guests__row__accordion-list__item__block:active
+  .guests__row__accordion-list__item__block__title {
+  color: #aa9dfa;
+}
+.guests__row__accordion-list__item__block:active svg circle {
+  fill: #aa9dfa;
+  stroke: #aa9dfa;
+}
+.guests__row__accordion-list__item__block:active svg path {
+  stroke: #ffffff;
+}
 
-.guests__row__accordion-list__item__title {
+.guests__row__accordion-list__item__block-active {
+  z-index: 1;
+  border-color: #aa9dfa;
+}
+
+.guests__row__accordion-list__item__block-active svg {
+  transform: rotate(180deg);
+}
+
+.guests__row__accordion-list__item__block__title {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: #ffffff;
+  transition: color 0.2s ease-in-out;
+}
+
+.guests__row__accordion-list__item__block__arrow {
+  margin-right: 3px;
+}
+
+.guests__row__accordion-list__item__content {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.guests__row__accordion-list__item__content-active {
+  display: block;
+}
+
+.guests__row__accordion-list__item__content__list {
+  margin: 0 -5px;
+  display: flex;
+  padding: 28px 0;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px 20px;
+}
+
+.guests__row__accordion-list__item__content__list__item {
+  width: calc((100% / 4) - (20px * 3) / 4);
+}
+
+.guests__row__accordion-list__item__content__list__item__link {
+  padding: 2px 5px;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.guests__row__accordion-list__item__content__list__item__link-active {
+  color: #aa9dfa;
+}
+.guests__row__accordion-list__item__content__list__item__link:hover {
+  color: #6d31ee;
+}
+.guests__row__accordion-list__item__content__list__item__link:focus-visible,
+.guests__row__accordion-list__item__content__list__item__link-active:focus-visible {
+  color: #ffffff;
+  background-color: #aa9dfa;
+}
+.guests__row__accordion-list__item__content__list__item__link:active {
+  color: #4f28a5;
 }
 
 .guests__row__item-about {
@@ -898,10 +992,11 @@ a {
 }
 
 .guests__row__item-about__none-user {
+  max-width: 345px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 48px 96px;
+  padding: 48px 10px;
   background-color: #292e39;
 }
 
@@ -915,6 +1010,7 @@ a {
 }
 
 .guests__row__item-about__user {
+  max-width: 345px;
   width: 100%;
   display: flex;
   flex-direction: column;

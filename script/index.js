@@ -155,3 +155,25 @@ document
       }
     });
   });
+
+// -----------------------------------------------------------------------------------
+
+document
+  .querySelector(".header__main__flex__buttons__search")
+  .addEventListener("click", function () {
+    const searchHidden = document.querySelector(
+      ".header__main__flex__buttons__search__hidden"
+    );
+
+    if (searchHidden.classList.contains("inactive")) {
+      searchHidden.style.display = "block";
+      searchHidden.classList.add("active");
+      searchHidden.classList.remove("inactive");
+    } else {
+      searchHidden.classList.add("inactive");
+      searchHidden.classList.remove("active");
+      setTimeout(() => {
+        searchHidden.style.display = "none";
+      }, 500);
+    }
+  });

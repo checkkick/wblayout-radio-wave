@@ -130,6 +130,7 @@ a {
   display: flex;
   align-items: center;
   gap: 24px;
+  position: relative;
 }
 
 .header__main__flex__buttons__search {
@@ -145,6 +146,62 @@ a {
 }
 .header__main__flex__buttons__search:active svg path {
   stroke: #4f28a5;
+}
+
+.header__main__flex__buttons__search__hidden {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  left: -282px;
+  top: 7px;
+  background-color: #ffffff;
+  width: 278px;
+  border-bottom: 1px solid #6d31ee;
+}
+.header__main__flex__buttons__search__hidden.active {
+  animation: 0.5s showEffect ease-in-out;
+  animation-fill-mode: forwards;
+}
+.header__main__flex__buttons__search__hidden.inactive {
+  animation: 0.5s hiddenEffect ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showEffect {
+  0% {
+    width: 0;
+    transform: translateX(278px);
+  }
+  100% {
+    width: 278px;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hiddenEffect {
+  0% {
+    width: 278px;
+    transform: translateX(0);
+  }
+  100% {
+    width: 0;
+    transform: translateX(278px);
+  }
+}
+
+.header__main__flex__buttons__search__hidden__input {
+  padding: 5px 4px 3px 4px;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #121723;
+}
+.header__main__flex__buttons__search__hidden__input::placeholder {
+  color: #a1a6b4;
 }
 
 .header__main__flex__buttons__enter {

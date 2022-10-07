@@ -178,3 +178,19 @@ document
       }, 500);
     }
   });
+
+// -----------------------------------------------------------------------------------
+
+document
+  .querySelector(".header__main__flex__buttons__enter")
+  .addEventListener("click", function () {
+    document.querySelector(".modal").classList.toggle("active");
+    document.querySelector("body").style.overflow = "hidden";
+  });
+
+document
+  .querySelector(".modal__window__close-btn")
+  .addEventListener("click", function () {
+    document.querySelector(".modal").classList.toggle("active");
+    document.querySelector("body").style.overflow = null;
+  });

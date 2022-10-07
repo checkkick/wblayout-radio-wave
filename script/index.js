@@ -18,33 +18,34 @@ function accordion(element) {
       }
     });
 
-  if (
-    document.querySelector(
-      ".guests__row__accordion-list__item__content__list__item__link-active"
-    )
-  ) {
-    document
-      .querySelector(
-        ".guests__row__accordion-list__item__content__list__item__link-active"
-      )
-      .classList.remove(
-        "guests__row__accordion-list__item__content__list__item__link-active"
-      );
+  const accordionLinkActive = document.querySelector(
+    ".guests__row__accordion-list__item__content__list__item__link-active"
+  );
+
+  if (accordionLinkActive) {
+    accordionLinkActive.classList.remove(
+      "guests__row__accordion-list__item__content__list__item__link-active"
+    );
   }
 
-  if (
-    document.querySelector(".guests__row__accordion-list__item__block-active")
-  ) {
-    document
-      .querySelector(".guests__row__accordion-list__item__block-active")
-      .classList.remove("guests__row__accordion-list__item__block-active");
+  const accordionBlockActive = document.querySelector(
+    ".guests__row__accordion-list__item__block-active"
+  );
+
+  if (accordionBlockActive) {
+    accordionBlockActive.classList.remove(
+      "guests__row__accordion-list__item__block-active"
+    );
   }
-  if (
-    document.querySelector(".guests__row__accordion-list__item__content-active")
-  ) {
-    document
-      .querySelector(".guests__row__accordion-list__item__content-active")
-      .classList.remove("guests__row__accordion-list__item__content-active");
+
+  const accordionContentActive = document.querySelector(
+    ".guests__row__accordion-list__item__content-active"
+  );
+
+  if (accordionContentActive) {
+    accordionContentActive.classList.remove(
+      "guests__row__accordion-list__item__content-active"
+    );
 
     document
       .querySelectorAll(

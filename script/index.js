@@ -194,3 +194,13 @@ document
     document.querySelector(".modal").classList.toggle("active");
     document.querySelector("body").style.overflow = null;
   });
+
+// -----------------------------------------------------------------------------------
+
+document.querySelector(".podcasts__btn").addEventListener("click", function () {
+  document.querySelectorAll(".podcasts__block__item.hidden").forEach((item) => {
+    item.classList.toggle("hidden");
+  });
+
+  document.querySelector(".podcasts__btn").classList.toggle("hidden");
+});

@@ -632,6 +632,9 @@ a {
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
 }
+.podcasts__btn.hidden {
+  display: none;
+}
 .podcasts__btn:hover {
   color: #ffffff;
   border-color: #6d31ee;
@@ -663,6 +666,9 @@ a {
   display: flex;
   align-items: center;
   width: calc(50% - 15px);
+}
+.podcasts__block__item.hidden {
+  display: none;
 }
 
 .podcasts__block__item__date {

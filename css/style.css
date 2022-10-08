@@ -870,6 +870,21 @@ a {
   border: 1px solid #e6e8ec;
   border-radius: 10px;
   background-color: #e6e8ec;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.shows__row__archive__top .choices .choices__inner:hover {
+  background-color: #f5f6f7;
+  border-color: #f5f6f7;
+}
+.shows__row__archive__top .choices:focus-visible .choices__inner {
+  border-color: #6d31ee;
+}
+.shows__row__archive__top .choices.is-open .choices__inner {
+  border-color: #e6e8ec;
+}
+.shows__row__archive__top .choices .choices__inner:active {
+  background-color: #d2d5dd;
+  border-color: #d2d5dd;
 }
 
 .choices[data-type*="select-one"] .choices__inner {
@@ -880,15 +895,14 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #121723;
 }
 
 .shows__row__archive__top .choices .choices__list--dropdown {
   z-index: -1;
   top: calc(100% - 10px);
-  border-radius: 0 0 10px 10px;
-  border: 1px solid #d2d5dd;
+  border: none;
   border-top: none;
+  color: #a1a6b4;
 }
 
 .choices__list--dropdown .choices__placeholder {
@@ -896,6 +910,8 @@ a {
 }
 
 .shows__row__archive__top .choices .choices__list--dropdown .choices__item {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
   padding-right: 0;
 }
 
@@ -906,19 +922,37 @@ a {
   padding-top: 20px;
 }
 
+.shows__row__archive__top .choices .choices__list--dropdown .choices__item {
+  border-bottom: 1px solid #d2d5dd;
+  border-left: 1px solid #d2d5dd;
+  border-right: 1px solid #d2d5dd;
+}
 .shows__row__archive__top
   .choices
   .choices__list--dropdown
-  .choices__item:not(:last-child) {
-  border-bottom: 1px solid #d2d5dd;
+  .choices__item:last-child {
+  border-radius: 0 0 10px 10px;
 }
-
 .shows__row__archive__top
   .choices
   .choices__list--dropdown
   .choices__item.is-highlighted {
-  background-color: #d2d5dd;
-  border: none;
+  background-color: #f5f6f7;
+  color: #121723;
+}
+.shows__row__archive__top
+  .choices
+  .choices__list--dropdown
+  .choices__item:focus-visible {
+  background-color: #aa9dfa;
+  color: #121723;
+}
+.shows__row__archive__top
+  .choices
+  .choices__list--dropdown
+  .choices__item:active {
+  background-color: #e6e8ec;
+  color: #121723;
 }
 
 .shows__row__archive__top .choices[data-type*="select-one"]::after {

@@ -486,10 +486,24 @@ a {
 }
 
 .modal__window__login__text__link {
+  outline: none;
+  padding: 3px;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   color: #6d31ee;
+  transition: border-bottom 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+.modal__window__login__text__link:hover {
+  border-bottom: 1px solid #6d31ee;
+}
+.modal__window__login__text__link:focus-visible {
+  background-color: #aa9dfa;
+  color: #ffffff;
+}
+.modal__window__login__text__link:active {
+  border-bottom: 1px solid #4f28a5;
 }
 
 .modal__window__login__input {

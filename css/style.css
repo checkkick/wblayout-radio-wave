@@ -84,6 +84,24 @@ a {
 
 /* Header */
 
+.header__main__mobile {
+  display: none;
+  background: #f2f2f2;
+  padding: 23px 0 17px 0;
+}
+
+.header__main__mobile__logo {
+  outline: none;
+}
+.header__main__mobile__logo:focus-visible {
+  outline: 2px solid #aa9dfa;
+  outline-offset: 2px;
+}
+.header__main__mobile__logo__img {
+  width: 112px;
+  height: 14px;
+}
+
 .header__main__flex {
   padding: 20px 0;
   display: flex;
@@ -1551,6 +1569,7 @@ a {
 }
 
 .playlists__row__left__age {
+  display: block;
   position: relative;
   width: 30px;
   height: 30px;
@@ -1686,6 +1705,10 @@ a {
   display: flex;
   align-items: center;
   background-color: #121723;
+}
+
+.playlists__row__mobile {
+  display: none;
 }
 
 /* Radio */
@@ -1844,17 +1867,17 @@ a {
   line-height: 160%;
   color: #a1a6b4;
   letter-spacing: -0.3px;
+  margin-bottom: 3px;
 }
 
 .about-us__main .swiper {
-  margin-right: -10px;
+  margin-right: -8px;
   position: static;
   width: 100%;
   overflow: hidden;
 }
 
 .swiper-slide {
-  max-width: 255px;
   display: flex;
   flex-direction: column;
 }
@@ -1880,18 +1903,22 @@ a {
 }
 
 .swiper .swiper-button-next {
+  position: absolute;
   outline: none;
   width: 42px;
   height: 42px;
-  top: 450px;
+  bottom: 635px;
+  top: auto;
   right: -85px;
 }
 
 .swiper .swiper-button-prev {
+  position: absolute;
   outline: none;
   width: 42px;
   height: 42px;
-  top: 450px;
+  bottom: 635px;
+  top: auto;
   left: -75px;
 }
 

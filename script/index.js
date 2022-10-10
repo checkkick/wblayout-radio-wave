@@ -127,6 +127,16 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   slidesPerView: 4,
   spaceBetween: 30,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
 
   // Navigation arrows
   navigation: {

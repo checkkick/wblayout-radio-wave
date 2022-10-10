@@ -15,6 +15,18 @@
   <body>
     <header class="header">
       <section class="header__main">
+        <div class="header__main__mobile">
+          <div class="container">
+            <a href="#" class="header__main__mobile__logo">
+              <img
+                class="header__main__mobile__logo__img"
+                src="img/logo.svg"
+                alt="logo"
+              />
+            </a>
+          </div>
+        </div>
+
         <div class="container">
           <div class="header__main__flex">
             <a href="#" class="header__main__flex__logo">
@@ -4452,6 +4464,16 @@
                 </div>
               </div>
             </div>
+            <div class="playlists__row__mobile">
+              <p class="playlists__row__left__text mobile">
+                Раздел «Плейлисты» может содержать информацию,
+                не предназначенную для несовершеннолетних
+              </p>
+              <p class="playlists__row__left__copyright mobile">
+                © 2021 | W-Wave
+              </p>
+              <span class="playlists__row__left__age mobile"></span>
+            </div>
           </div>
         </div>
       </section>
@@ -4513,66 +4535,102 @@
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/about-us-photo-1.png"
-                    alt="photo"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:1300px)"
+                      srcset="img/about-us-photo-1-1024px.png"
+                    />
+                    <img
+                      class="swiper-slide__image"
+                      src="img/about-us-photo-1.png"
+                      alt="photo"
+                    />
+                  </picture>
                   <h3 class="swiper-slide__title">Дмитрий Гутенберг</h3>
                   <p class="swiper-slide__text">
                     Эксперт (ну, почти) по всем вопросам (почти)
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/about-us-photo-2.png"
-                    alt="photo"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:1300px)"
+                      srcset="img/about-us-photo-2-1024px.png"
+                    />
+                    <img
+                      class="swiper-slide__image"
+                      src="img/about-us-photo-2.png"
+                      alt="photo"
+                    />
+                  </picture>
                   <h3 class="swiper-slide__title">Анна Васильева</h3>
                   <p class="swiper-slide__text">
                     Как я здесь оказалась? А главное — зачем?
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/about-us-photo-3.png"
-                    alt="photo"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:1300px)"
+                      srcset="img/about-us-photo-3-1024px.png"
+                    />
+                    <img
+                      class="swiper-slide__image"
+                      src="img/about-us-photo-3.png"
+                      alt="photo"
+                    />
+                  </picture>
                   <h3 class="swiper-slide__title">Пётр Дмитриевский</h3>
                   <p class="swiper-slide__text">
                     Господа! Внимание! Благодарю за внимание!
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/about-us-photo-4.png"
-                    alt="photo"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:1300px)"
+                      srcset="img/about-us-photo-4-1024px.png"
+                    />
+                    <img
+                      class="swiper-slide__image"
+                      src="img/about-us-photo-4.png"
+                      alt="photo"
+                    />
+                  </picture>
                   <h3 class="swiper-slide__title">Татьяна Флеганова</h3>
                   <p class="swiper-slide__text">
                     Одна я в пальто стою красивая, а вокруг…
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/about-us-photo-5.png"
-                    alt="photo"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:1300px)"
+                      srcset="img/about-us-photo-5-1024px.png"
+                    />
+                    <img
+                      class="swiper-slide__image"
+                      src="img/about-us-photo-5.png"
+                      alt="photo"
+                    />
+                  </picture>
                   <h3 class="swiper-slide__title">Фёдор Прокопьев</h3>
                   <p class="swiper-slide__text">
                     Привет! Я фотограф, музыкант, ведущий
                   </p>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/about-us-photo-6.png"
-                    alt="photo"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width:1300px)"
+                      srcset="img/about-us-photo-6-1024px.png"
+                    />
+                    <img
+                      class="swiper-slide__image"
+                      src="img/about-us-photo-6.png"
+                      alt="photo"
+                    />
+                  </picture>
                   <h3 class="swiper-slide__title">Светлана Кортнева</h3>
                   <p class="swiper-slide__text">
                     Художник-оформитель. Оформляю

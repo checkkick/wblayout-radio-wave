@@ -184,3 +184,50 @@
     letter-spacing: -0.5px;
   }
 }
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 768px;
+    padding: 0 114px;
+  }
+
+  .header__row__flex {
+    margin-right: 0;
+  }
+  .header__main__flex__nav {
+    display: none;
+  }
+  .header__main__flex__burger {
+    display: block;
+  }
+  .header__row__flex__themes-list {
+    padding: 0;
+    border: none;
+  }
+  .header__row__flex__play:not(.last) {
+    display: none;
+  }
+  .header__row__flex__play.last {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header__row__flex__play__block {
+    display: none;
+  }
+  .header__row__flex__play__logo {
+    display: flex;
+    align-items: center;
+  }
+  .header__banner__flex {
+    padding-right: 0;
+    background: none;
+  }
+
+  .podcasts__block__item {
+    width: 100%;
+  }
+  .podcasts__btn {
+    margin: 0 auto;
+  }
+}

@@ -209,6 +209,7 @@
 
   .header__row__flex {
     margin-right: 0;
+    padding: 18px 0;
   }
   .header__main__flex__nav {
     display: none;
@@ -219,6 +220,7 @@
   .header__row__flex__themes-list {
     padding: 0;
     border: none;
+    gap: 9px;
   }
   .header__row__flex__play:not(.last) {
     display: none;
@@ -239,7 +241,13 @@
     padding-right: 0;
     background: none;
   }
+  .header__banner__flex__text {
+    margin-bottom: 23px;
+  }
 
+  .podcasts__block {
+    margin-right: 0;
+  }
   .podcasts__block__item {
     width: 100%;
   }
@@ -258,17 +266,34 @@
   }
   .shows__row__archive__bottom.mobile {
     padding-top: 0;
-    padding-left: 116px;
-    background: url("../img/shows-mic.png") no-repeat center left / 70px 96px;
+    padding-left: 186px;
+    background: url("../img/shows-mic.png") no-repeat 98px center / 70px 96px;
+  }
+  .shows__row__archive__bottom__btn {
+    margin-bottom: 5px;
+  }
+  .shows__row__archive__bottom__text {
+    max-width: 255px;
   }
   .shows__row__more {
-    padding-bottom: 60px;
+    margin-right: 0;
+    padding-bottom: 55px;
     border-bottom: 1px solid #e6e8ec;
   }
+  .shows__row__more__item__about {
+    padding: 22px 60px 18px 14px;
+  }
+  .shows__row__archive__top .choices .choices__inner {
+    padding: 8px;
+  }
 
+  .guests__about-text {
+    margin-bottom: 52px;
+  }
   .guests__row {
     flex-direction: column;
     margin-right: 0;
+    gap: 55px;
   }
   .guests__row__item-about {
     width: 100%;
@@ -283,26 +308,70 @@
   .guests__row__item-about__user__story {
     max-width: 398px;
   }
+  .guests__row__accordion-list__item__content__list {
+    gap: 28px 20px;
+  }
 
+  .playlists__row {
+    gap: 37px;
+  }
   .playlists__row__left__radio {
-    max-width: none;
-    max-height: 175px;
-    gap: 30px;
+    max-height: 200px;
+    gap: 39px 27px;
+  }
+  .playlists__row__right {
+    gap: 30px 35px;
+    margin-right: 0;
+    margin-bottom: 5px;
   }
   .playlists__row__right__item {
     width: calc((100% / 2) - (40px * 1) / 2);
     flex-direction: row;
   }
 
+  .radio {
+    padding: 54px 0 94px 0;
+  }
   .radio__row {
     flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .radio__row__model {
+    max-height: none;
+    max-width: none;
+  }
+  .radio__row__model::after {
+    top: -24px;
+    width: 160px;
+    height: 208px;
+  }
+  .radio__row__about {
+    max-width: none;
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .radio__row__about__title {
+    max-width: 441px;
+  }
+  .radio__row__about__text {
+    letter-spacing: normal;
+  }
+  .radio__row__about__text:nth-child(3) {
+    max-width: 530px;
   }
 
+  .about-us__main {
+    gap: 26px;
+  }
   .about-us__main__description {
     position: relative;
     padding-right: 0;
     padding-bottom: 142px;
     background: none;
+  }
+  .about-us__main__description__subtitle {
+    letter-spacing: normal;
   }
   .about-us__main__description::after {
     content: "";
@@ -313,6 +382,23 @@
     height: 112px;
     background: url(../img/about-us-background-768px.svg) no-repeat left center /
       contain;
+  }
+  .about-us__main__description__text {
+    letter-spacing: normal;
+  }
+  .about-us__main .swiper {
+    margin-right: 0;
+  }
+  .swiper-slide__image {
+    margin-bottom: 26px;
+  }
+  .swiper .swiper-button-next {
+    bottom: 736px;
+    right: -65px;
+  }
+  .swiper .swiper-button-prev {
+    bottom: 736px;
+    left: -65px;
   }
   .about-us__main__form__row {
     flex-direction: column;
@@ -326,11 +412,32 @@
   }
   .footer__row__links {
     align-items: center;
+    gap: 24px;
+  }
+  .footer__row__links__social {
+    gap: 37px;
+  }
+  .footer__row__links__social__logo svg {
+    scale: 1.5;
   }
   .footer__row__nav {
     width: 100%;
   }
   .footer__row__nav__list {
+    gap: 28px 179px;
+    margin-left: -10px;
+  }
+  .footer__row__nav__list__item {
+    width: calc((100% / 3) - (190px * 2) / 3);
+  }
+  .footer__row__nav__list {
     max-width: none;
+  }
+  .footer__copyright {
+    padding: 20px 0 10px 0;
+    background: url(../img/copyright-768px.svg) no-repeat top center / 100%;
+  }
+  .footer__copyright__text {
+    margin-left: 0;
   }
 }

@@ -14,6 +14,49 @@
   </head>
   <body>
     <header class="header">
+      <section style="display: none" class="header__mobile-menu inactive">
+        <span class="header__mobile-menu__close"></span>
+        <nav class="header__mobile-menu__nav">
+          <ul class="header__mobile-menu__nav__list">
+            <li class="header__mobile-menu__nav__list__item">
+              <a
+                href="#podcasts"
+                class="header__mobile-menu__nav__list__item__link"
+                >Подкасты</a
+              >
+            </li>
+            <li class="header__mobile-menu__nav__list__item">
+              <a
+                href="#shows-section"
+                class="header__mobile-menu__nav__list__item__link"
+                >Передачи</a
+              >
+            </li>
+            <li class="header__mobile-menu__nav__list__item">
+              <a
+                href="#guests"
+                class="header__mobile-menu__nav__list__item__link"
+                >Гости</a
+              >
+            </li>
+            <li class="header__mobile-menu__nav__list__item">
+              <a
+                href="#playlists"
+                class="header__mobile-menu__nav__list__item__link"
+                >Плейлисты</a
+              >
+            </li>
+            <li class="header__mobile-menu__nav__list__item">
+              <a
+                href="#about-us"
+                class="header__mobile-menu__nav__list__item__link"
+                >О нас</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+
       <section class="header__main">
         <div class="header__main__mobile">
           <div class="container">
@@ -1902,6 +1945,13 @@
                 </div>
               </div>
             </div>
+
+            <div class="shows__row__archive__bottom mobile">
+              <button class="shows__row__archive__bottom__btn">Архив</button>
+              <p class="shows__row__archive__bottom__text">
+                В архив попадают все передачи, которые вы пропустили! Enjoy:)
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -2955,11 +3005,17 @@
                 style="display: none"
                 class="guests__row__item-about__user"
               >
-                <img
-                  src="img/guest-1.png"
-                  alt="guest"
-                  class="guests__row__item-about__user__image"
-                />
+                <picture>
+                  <source
+                    media="(max-width:1023px)"
+                    srcset="img/guest-1-768px.png"
+                  />
+                  <img
+                    class="guests__row__item-about__user__image"
+                    src="img/img/guest-1.png"
+                    alt="photo"
+                  />
+                </picture>
                 <div class="guests__row__item-about__user__social">
                   <a
                     href="#"
@@ -4540,6 +4596,10 @@
                 <div class="swiper-slide">
                   <picture>
                     <source
+                      media="(max-width:1023px)"
+                      srcset="img/about-us-photo-1.png"
+                    />
+                    <source
                       media="(max-width:1300px)"
                       srcset="img/about-us-photo-1-1024px.png"
                     />
@@ -4556,6 +4616,10 @@
                 </div>
                 <div class="swiper-slide">
                   <picture>
+                    <source
+                      media="(max-width:1023px)"
+                      srcset="img/about-us-photo-2.png"
+                    />
                     <source
                       media="(max-width:1300px)"
                       srcset="img/about-us-photo-2-1024px.png"
@@ -4574,6 +4638,10 @@
                 <div class="swiper-slide">
                   <picture>
                     <source
+                      media="(max-width:1023px)"
+                      srcset="img/about-us-photo-3.png"
+                    />
+                    <source
                       media="(max-width:1300px)"
                       srcset="img/about-us-photo-3-1024px.png"
                     />
@@ -4590,6 +4658,10 @@
                 </div>
                 <div class="swiper-slide">
                   <picture>
+                    <source
+                      media="(max-width:1023px)"
+                      srcset="img/about-us-photo-4.png"
+                    />
                     <source
                       media="(max-width:1300px)"
                       srcset="img/about-us-photo-4-1024px.png"
@@ -4608,6 +4680,10 @@
                 <div class="swiper-slide">
                   <picture>
                     <source
+                      media="(max-width:1023px)"
+                      srcset="img/about-us-photo-5.png"
+                    />
+                    <source
                       media="(max-width:1300px)"
                       srcset="img/about-us-photo-5-1024px.png"
                     />
@@ -4624,6 +4700,10 @@
                 </div>
                 <div class="swiper-slide">
                   <picture>
+                    <source
+                      media="(max-width:1023px)"
+                      srcset="img/about-us-photo-6.png"
+                    />
                     <source
                       media="(max-width:1300px)"
                       srcset="img/about-us-photo-6-1024px.png"

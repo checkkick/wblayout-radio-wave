@@ -214,3 +214,43 @@ document.querySelector(".podcasts__btn").addEventListener("click", function () {
 
   document.querySelector(".podcasts__btn").classList.toggle("hidden");
 });
+
+// -----------------------------------------------------------------------------------
+
+function closeMobileMenu() {
+  const mobileMenu = document.querySelector(".header__mobile-menu");
+
+  document.querySelector("body").style.overflow = null;
+  mobileMenu.classList.add("inactive");
+  mobileMenu.classList.remove("active");
+  setTimeout(() => {
+    mobileMenu.style.display = "none";
+  }, 500);
+
+  document
+    .querySelectorAll(".header__mobile-menu__nav__list__item__link")
+    .forEach((item) => {
+      item.removeEventListener("click", closeMobileMenu);
+    });
+}
+
+document
+  .querySelector(".header__main__flex__burger")
+  .addEventListener("click", function () {
+    const mobileMenu = document.querySelector(".header__mobile-menu");
+
+    document.querySelector("body").style.overflow = "hidden";
+    mobileMenu.style.display = "block";
+    mobileMenu.classList.remove("inactive");
+    mobileMenu.classList.add("active");
+
+    document
+      .querySelectorAll(".header__mobile-menu__nav__list__item__link")
+      .forEach((item) => {
+        item.addEventListener("click", closeMobileMenu);
+      });
+  });
+
+document
+  .querySelector(".header__mobile-menu__close")
+  .addEventListener("click", closeMobileMenu);

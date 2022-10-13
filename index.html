@@ -67,6 +67,9 @@
                 alt="logo"
               />
             </a>
+            <button class="header__main__flex__buttons__enter mobile">
+              Вход
+            </button>
           </div>
         </div>
 
@@ -249,6 +252,81 @@
         </div>
       </section>
 
+      <section class="header__mobile">
+        <div class="header__mobile__row">
+          <div class="container">
+            <img
+              class="header__mobile__row__logo"
+              src="img/header-plus.svg"
+              alt="plus"
+            />
+            <p class="header__mobile__row__text">Что в эфире?</p>
+          </div>
+        </div>
+
+        <div class="header__mobile__hidden">
+          <div class="container">
+            <div class="header__mobile__hidden__play">
+              <a
+                href="#"
+                click.prevent
+                class="header__mobile__hidden__play__logo"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  view-box="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                    fill="#A1A6B4"
+                  />
+                </svg>
+              </a>
+              <div class="header__mobile__hidden__play__block">
+                <p class="header__mobile__hidden__play__block__title">
+                  Ранее в эфире
+                </p>
+                <p class="header__mobile__hidden__play__block__name">
+                  «Музыка»
+                </p>
+              </div>
+            </div>
+
+            <div class="header__mobile__hidden__play">
+              <a
+                href="#"
+                click.prevent
+                class="header__mobile__hidden__play__logo"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  view-box="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                    fill="#A1A6B4"
+                  />
+                </svg>
+              </a>
+              <div class="header__mobile__hidden__play__block">
+                <p class="header__mobile__hidden__play__block__title">
+                  Сейчас в эфире
+                </p>
+                <p class="header__mobile__hidden__play__block__name">
+                  «Как так?»
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="header__row">
         <div class="container">
           <div class="header__row__flex">
@@ -360,11 +438,17 @@
           <div class="podcasts__block">
             <div class="podcasts__block__item">
               <span class="podcasts__block__item__date">14 июня</span>
-              <img
-                class="podcasts__block__item__img"
-                src="img/podcasts-1.png"
-                alt="podcasts-1"
-              />
+              <picture>
+                <source
+                  media="(max-width:745px)"
+                  srcset="img/podcasts-1-768px.png"
+                />
+                <img
+                  class="podcasts__block__item__img"
+                  src="img/podcasts-1.png"
+                  alt="photo"
+                />
+              </picture>
               <div class="podcasts__block__item__about">
                 <div class="podcasts__block__item__about__row">
                   <div class="podcasts__block__item__about__row__description">
@@ -474,11 +558,17 @@
             </div>
             <div class="podcasts__block__item">
               <span class="podcasts__block__item__date">11 июня</span>
-              <img
-                class="podcasts__block__item__img"
-                src="img/podcasts-2.png"
-                alt="podcasts-2"
-              />
+              <picture>
+                <source
+                  media="(max-width:745px)"
+                  srcset="img/podcasts-2-768px.png"
+                />
+                <img
+                  class="podcasts__block__item__img"
+                  src="img/podcasts-2.png"
+                  alt="photo"
+                />
+              </picture>
               <div class="podcasts__block__item__about">
                 <div class="podcasts__block__item__about__row">
                   <div class="podcasts__block__item__about__row__description">
@@ -588,11 +678,17 @@
             </div>
             <div class="podcasts__block__item">
               <span class="podcasts__block__item__date">8 июня</span>
-              <img
-                class="podcasts__block__item__img"
-                src="img/podcasts-3.png"
-                alt="podcasts-3"
-              />
+              <picture>
+                <source
+                  media="(max-width:745px)"
+                  srcset="img/podcasts-3-768px.png"
+                />
+                <img
+                  class="podcasts__block__item__img"
+                  src="img/podcasts-3.png"
+                  alt="photo"
+                />
+              </picture>
               <div class="podcasts__block__item__about">
                 <div class="podcasts__block__item__about__row">
                   <div class="podcasts__block__item__about__row__description">
@@ -702,11 +798,17 @@
             </div>
             <div class="podcasts__block__item">
               <span class="podcasts__block__item__date">5 июня</span>
-              <img
-                class="podcasts__block__item__img"
-                src="img/podcasts-4.png"
-                alt="podcasts-4"
-              />
+              <picture>
+                <source
+                  media="(max-width:745px)"
+                  srcset="img/podcasts-4-768px.png"
+                />
+                <img
+                  class="podcasts__block__item__img"
+                  src="img/podcasts-4.png"
+                  alt="photo"
+                />
+              </picture>
               <div class="podcasts__block__item__about">
                 <div class="podcasts__block__item__about__row">
                   <div class="podcasts__block__item__about__row__description">
@@ -1273,11 +1375,17 @@
 
             <div class="podcasts__block__item hidden">
               <span class="podcasts__block__item__date">14 июня</span>
-              <img
-                class="podcasts__block__item__img"
-                src="img/podcasts-1.png"
-                alt="podcasts-1"
-              />
+              <picture>
+                <source
+                  media="(max-width:745px)"
+                  srcset="img/podcasts-1-768px.png"
+                />
+                <img
+                  class="podcasts__block__item__img"
+                  src="img/podcasts-1.png"
+                  alt="photo"
+                />
+              </picture>
               <div class="podcasts__block__item__about">
                 <div class="podcasts__block__item__about__row">
                   <div class="podcasts__block__item__about__row__description">
@@ -1387,11 +1495,17 @@
             </div>
             <div class="podcasts__block__item hidden">
               <span class="podcasts__block__item__date">11 июня</span>
-              <img
-                class="podcasts__block__item__img"
-                src="img/podcasts-2.png"
-                alt="podcasts-2"
-              />
+              <picture>
+                <source
+                  media="(max-width:745px)"
+                  srcset="img/podcasts-2-768px.png"
+                />
+                <img
+                  class="podcasts__block__item__img"
+                  src="img/podcasts-2.png"
+                  alt="photo"
+                />
+              </picture>
               <div class="podcasts__block__item__about">
                 <div class="podcasts__block__item__about__row">
                   <div class="podcasts__block__item__about__row__description">
@@ -1501,11 +1615,17 @@
             </div>
             <div class="podcasts__block__item hidden">
               <span class="podcasts__block__item__date">8 июня</span>
-              <img
-                class="podcasts__block__item__img"
-                src="img/podcasts-3.png"
-                alt="podcasts-3"
-              />
+              <picture>
+                <source
+                  media="(max-width:745px)"
+                  srcset="img/podcasts-3-768px.png"
+                />
+                <img
+                  class="podcasts__block__item__img"
+                  src="img/podcasts-3.png"
+                  alt="photo"
+                />
+              </picture>
               <div class="podcasts__block__item__about">
                 <div class="podcasts__block__item__about__row">
                   <div class="podcasts__block__item__about__row__description">
@@ -1615,11 +1735,17 @@
             </div>
             <div class="podcasts__block__item hidden">
               <span class="podcasts__block__item__date">5 июня</span>
-              <img
-                class="podcasts__block__item__img"
-                src="img/podcasts-4.png"
-                alt="podcasts-4"
-              />
+              <picture>
+                <source
+                  media="(max-width:745px)"
+                  srcset="img/podcasts-4-768px.png"
+                />
+                <img
+                  class="podcasts__block__item__img"
+                  src="img/podcasts-4.png"
+                  alt="photo"
+                />
+              </picture>
               <div class="podcasts__block__item__about">
                 <div class="podcasts__block__item__about__row">
                   <div class="podcasts__block__item__about__row__description">
@@ -3006,13 +3132,14 @@
                 class="guests__row__item-about__user"
               >
                 <picture>
+                  <source media="(max-width:535px)" srcset="img/guest-1.png" />
                   <source
                     media="(max-width:1023px)"
                     srcset="img/guest-1-768px.png"
                   />
                   <img
                     class="guests__row__item-about__user__image"
-                    src="img/img/guest-1.png"
+                    src="img/guest-1.png"
                     alt="photo"
                   />
                 </picture>
@@ -4876,6 +5003,56 @@
             </div>
           </div>
 
+          <nav class="footer__row__nav">
+            <ul class="footer__row__nav__list">
+              <li class="footer__row__nav__list__item">
+                <a href="#podcasts" class="footer__row__nav__list__item__link"
+                  >Подкасты</a
+                >
+              </li>
+              <li class="footer__row__nav__list__item">
+                <a href="#playlists" class="footer__row__nav__list__item__link"
+                  >Плейлисты</a
+                >
+              </li>
+              <li class="footer__row__nav__list__item">
+                <a href="#" class="footer__row__nav__list__item__link"
+                  >Новости</a
+                >
+              </li>
+              <li class="footer__row__nav__list__item">
+                <a
+                  href="#shows-section"
+                  class="footer__row__nav__list__item__link"
+                  >Передачи</a
+                >
+              </li>
+              <li class="footer__row__nav__list__item">
+                <a href="#" class="footer__row__nav__list__item__link">Сетка</a>
+              </li>
+              <li class="footer__row__nav__list__item">
+                <a href="#" class="footer__row__nav__list__item__link">Блоги</a>
+              </li>
+              <li class="footer__row__nav__list__item">
+                <a href="#guests" class="footer__row__nav__list__item__link"
+                  >Гости</a
+                >
+              </li>
+              <li class="footer__row__nav__list__item">
+                <a href="#about-us" class="footer__row__nav__list__item__link"
+                  >О нас</a
+                >
+              </li>
+              <li class="footer__row__nav__list__item">
+                <a href="#" class="footer__row__nav__list__item__link">Топы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="footer__nav__mobile">
+        <div class="container">
           <nav class="footer__row__nav">
             <ul class="footer__row__nav__list">
               <li class="footer__row__nav__list__item">

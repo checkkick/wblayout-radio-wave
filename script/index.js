@@ -254,3 +254,8 @@ document
 document
   .querySelector(".header__mobile-menu__close")
   .addEventListener("click", closeMobileMenu);
+
+const headerMobileRow = document.querySelector(".header__mobile__row");
+headerMobileRow.addEventListener("click", () => {
+  headerMobileRow.classList.toggle("active");
+});

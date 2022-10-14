@@ -130,6 +130,10 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     0: {
       slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    535: {
+      slidesPerView: 2,
       spaceBetween: 30,
     },
     1300: {
@@ -213,6 +217,7 @@ document.querySelector(".podcasts__btn").addEventListener("click", function () {
   });
 
   document.querySelector(".podcasts__btn").classList.toggle("hidden");
+  document.querySelector(".podcasts__block").style.margin = "0";
 });
 
 // -----------------------------------------------------------------------------------
@@ -255,7 +260,19 @@ document
   .querySelector(".header__mobile-menu__close")
   .addEventListener("click", closeMobileMenu);
 
+// -----------------------------------------------------------------------------------
+
 const headerMobileRow = document.querySelector(".header__mobile__row");
 headerMobileRow.addEventListener("click", () => {
   headerMobileRow.classList.toggle("active");
 });
+
+// -----------------------------------------------------------------------------------
+
+new Swiper(".playlists-swiper", {
+  loop: false,
+  slidesPerView: "auto",
+  spaceBetween: 10,
+});
+
+// -----------------------------------------------------------------------------------

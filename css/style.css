@@ -193,6 +193,26 @@ a {
   line-height: 20px;
 }
 
+.header__mobile-menu__submenu {
+  display: none;
+  padding: 30px;
+  height: 50%;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header__mobile-menu__submenu__item {
+  width: calc((100% / 2) - (75px * 1) / 2);
+}
+
+.header__mobile-menu__submenu__item__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
 .header__main__mobile {
   display: none;
   background: #f2f2f2;
@@ -1266,6 +1286,9 @@ a {
   padding-top: 113px;
   background: url("../img/shows-mic.png") no-repeat top left / 65px 89px;
 }
+.shows__row__archive__bottom.mobile {
+  display: none;
+}
 
 .shows__row__archive__bottom__btn {
   cursor: pointer;
@@ -1670,6 +1693,49 @@ a {
 .playlists {
   padding: 94px 0;
   background-color: var(--white-color);
+}
+
+.playlists-swiper {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.playlists-swiper .swiper-slide {
+  width: max-content;
+}
+
+.playlists-swiper__radio__input:checked,
+.playlists-swiper__radio__input:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.playlists-swiper__radio__input:not(:checked)
+  + .playlists-swiper__radio__label {
+  outline: none;
+  padding: 9px 19px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #6d31ee;
+  border: 2px solid #6d31ee;
+  border-radius: 77px;
+  background-color: #ffffff;
+}
+
+.playlists-swiper__radio__input:checked + .playlists-swiper__radio__label {
+  outline: none;
+  padding: 9px 19px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  border: 2px solid #6d31ee;
+  border-radius: 77px;
+  background-color: #6d31ee;
+  color: #ffffff;
 }
 
 .playlists__row {
@@ -2127,6 +2193,7 @@ a {
 }
 
 .about-us__main .swiper {
+  cursor: grab;
   margin-right: -8px;
   position: static;
   width: 100%;

@@ -213,7 +213,7 @@
     display: none;
   }
   .header__main__flex__burger {
-    display: block;
+    display: flex;
   }
   .header__row__flex__themes-list {
     padding: 0;
@@ -689,10 +689,6 @@
   }
   .guests__row {
     gap: 35px;
-  }
-
-  .guests__row__accordion-list__item:last-child {
-    display: none;
   }
 
   .guests__row__accordion-list__item__block {

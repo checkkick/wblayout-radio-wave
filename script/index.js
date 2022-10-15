@@ -147,6 +147,10 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  a11y: {
+    nextSlideMessage: "Следующий слайд",
+    prevSlideMessage: "Предыдущий слайд",
+  },
 });
 
 // -----------------------------------------------------------------------------------
@@ -196,10 +200,12 @@ document
 // -----------------------------------------------------------------------------------
 
 document
-  .querySelector(".header__main__flex__buttons__enter")
-  .addEventListener("click", function () {
-    document.querySelector(".modal").classList.toggle("active");
-    document.querySelector("body").style.overflow = "hidden";
+  .querySelectorAll(".header__main__flex__buttons__enter")
+  .forEach((item) => {
+    item.addEventListener("click", function () {
+      document.querySelector(".modal").classList.toggle("active");
+      document.querySelector("body").style.overflow = "hidden";
+    });
   });
 
 document

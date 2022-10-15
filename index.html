@@ -15,7 +15,10 @@
   <body>
     <header class="header">
       <section style="display: none" class="header__mobile-menu inactive">
-        <span class="header__mobile-menu__close"></span>
+        <span
+          class="header__mobile-menu__close"
+          aria-label="Кнопка закрытия меню"
+        ></span>
         <nav class="header__mobile-menu__nav">
           <ul class="header__mobile-menu__nav__list">
             <li class="header__mobile-menu__nav__list__item">
@@ -91,14 +94,21 @@
       <section class="header__main">
         <div class="header__main__mobile">
           <div class="container">
-            <a href="#" class="header__main__mobile__logo">
+            <a
+              aria-label="Логотип W-Wave"
+              href="#!"
+              class="header__main__mobile__logo"
+            >
               <img
                 class="header__main__mobile__logo__img"
                 src="img/logo.svg"
                 alt="logo"
               />
             </a>
-            <button class="header__main__flex__buttons__enter mobile">
+            <button
+              class="header__main__flex__buttons__enter mobile"
+              aria-label="Кнопка входа"
+            >
               Вход
             </button>
           </div>
@@ -106,10 +116,14 @@
 
         <div class="container">
           <div class="header__main__flex">
-            <a href="#" class="header__main__flex__logo">
+            <a
+              aria-label="Логотип W-Wave"
+              href="#!"
+              class="header__main__flex__logo"
+            >
               <img src="img/logo.svg" alt="logo" />
             </a>
-            <div class="header__main__flex__burger">
+            <div class="header__main__flex__burger" aria-label="Кнопка меню">
               <span class="header__main__flex__burger__span"></span>
             </div>
             <nav class="header__main__flex__nav">
@@ -152,7 +166,11 @@
               </ul>
             </nav>
             <div class="header__main__flex__buttons">
-              <a href="#" class="header__main__flex__buttons__search">
+              <a
+                aria-label="Кнопка поиска"
+                href="#!"
+                class="header__main__flex__buttons__search"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -180,10 +198,16 @@
                 <input
                   class="header__main__flex__buttons__search__hidden__input"
                   placeholder="Поиск по сайту"
+                  aria-label="Поисковый ввод"
                   type="text"
                 />
               </div>
-              <button class="header__main__flex__buttons__enter">Вход</button>
+              <button
+                class="header__main__flex__buttons__enter"
+                aria-label="Кнопка входа"
+              >
+                Вход
+              </button>
             </div>
           </div>
         </div>
@@ -195,7 +219,7 @@
             <h2 class="modal__window__login__title">Вход</h2>
             <p class="modal__window__login__text">
               Если у вас ещё нет аккаунта,
-              <a href="#" class="modal__window__login__text__link"
+              <a href="#!" class="modal__window__login__text__link"
                 >зарегестрируйтесь</a
               >
             </p>
@@ -209,11 +233,17 @@
               class="modal__window__login__input"
               placeholder="Пароль"
             />
-            <button class="modal__window__login__btn">Войти</button>
+            <button class="modal__window__login__btn" aria-label="Кнопка входа">
+              Войти
+            </button>
           </div>
           <p class="modal__window__help-text">Войти с помощью:</p>
           <div class="modal__window__social">
-            <a href="#" class="modal__window__social__link">
+            <a
+              aria-label="facebook"
+              href="#!"
+              class="modal__window__social__link"
+            >
               <svg
                 width="34"
                 height="34"
@@ -227,7 +257,11 @@
                 />
               </svg>
             </a>
-            <a href="#" class="modal__window__social__link">
+            <a
+              aria-label="Вконтакте"
+              href="#!"
+              class="modal__window__social__link"
+            >
               <svg
                 width="34"
                 height="34"
@@ -242,7 +276,11 @@
                 />
               </svg>
             </a>
-            <a href="#" class="modal__window__social__link">
+            <a
+              aria-label="google"
+              href="#!"
+              class="modal__window__social__link"
+            >
               <svg
                 width="34"
                 height="34"
@@ -258,7 +296,11 @@
               </svg>
             </a>
           </div>
-          <a href="#!" class="modal__window__close-btn">
+          <a
+            aria-label="Кнопка закрыть"
+            href="#!"
+            class="modal__window__close-btn"
+          >
             <svg
               width="42"
               height="42"
@@ -299,8 +341,8 @@
           <div class="container">
             <div class="header__mobile__hidden__play">
               <a
-                href="#"
-                click.prevent
+                aria-label="Ранее в эфире 'Музыка'"
+                href="#!"
                 class="header__mobile__hidden__play__logo"
               >
                 <svg
@@ -328,8 +370,8 @@
 
             <div class="header__mobile__hidden__play">
               <a
-                href="#"
-                click.prevent
+                aria-label="Сейчас в эфире 'Как так?'"
+                href="#!"
                 class="header__mobile__hidden__play__logo"
               >
                 <svg
@@ -363,38 +405,42 @@
           <div class="header__row__flex">
             <ul class="header__row__flex__themes-list">
               <li class="header__row__flex__themes-list__item">
-                <a href="#" class="header__row__flex__themes-list__item__link"
+                <a href="#!" class="header__row__flex__themes-list__item__link"
                   >Новости</a
                 >
               </li>
               <li class="header__row__flex__themes-list__item">
-                <a href="#" class="header__row__flex__themes-list__item__link"
+                <a href="#!" class="header__row__flex__themes-list__item__link"
                   >Блоги</a
                 >
               </li>
               <li class="header__row__flex__themes-list__item">
-                <a href="#" class="header__row__flex__themes-list__item__link"
+                <a href="#!" class="header__row__flex__themes-list__item__link"
                   >Топы</a
                 >
               </li>
               <li class="header__row__flex__themes-list__item">
-                <a href="#" class="header__row__flex__themes-list__item__link"
+                <a href="#!" class="header__row__flex__themes-list__item__link"
                   >Опросы</a
                 >
               </li>
               <li class="header__row__flex__themes-list__item">
-                <a href="#" class="header__row__flex__themes-list__item__link"
+                <a href="#!" class="header__row__flex__themes-list__item__link"
                   >Рейтинги</a
                 >
               </li>
               <li class="header__row__flex__themes-list__item">
-                <a href="#" class="header__row__flex__themes-list__item__link"
+                <a href="#!" class="header__row__flex__themes-list__item__link"
                   >Реклама</a
                 >
               </li>
             </ul>
             <div class="header__row__flex__play">
-              <a href="#" click.prevent class="header__row__flex__play__logo">
+              <a
+                href="#!"
+                aria-label="Ранее в эфире 'Музыка'"
+                class="header__row__flex__play__logo"
+              >
                 <svg
                   width="20"
                   height="20"
@@ -416,7 +462,12 @@
               </div>
             </div>
             <div class="header__row__flex__play last">
-              <a href="#" click.prevent class="header__row__flex__play__logo">
+              <a
+                aria-label="Сейчас в эфире 'Как так?'"
+                href="#!"
+                click.prevent
+                class="header__row__flex__play__logo"
+              >
                 <svg
                   width="20"
                   height="20"
@@ -502,6 +553,7 @@
                   <div
                     class="podcasts__block__item__about__row__play-btn"
                     tabindex="0"
+                    aria-label="Прослушать. Европа. XIX век. Дмитрий Гутенберг"
                   >
                     <svg
                       width="48"
@@ -526,8 +578,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -547,8 +600,9 @@
                     258
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -566,8 +620,9 @@
                     104
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -621,6 +676,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. О музыке. Дмитрий Гутенберг"
                     tabindex="0"
                   >
                     <svg
@@ -646,8 +702,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -667,8 +724,9 @@
                     207
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -686,8 +744,9 @@
                     34
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -741,6 +800,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. Люди сегодня. Анна Васильева"
                     tabindex="0"
                   >
                     <svg
@@ -766,8 +826,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -787,8 +848,9 @@
                     104
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -806,8 +868,9 @@
                     54
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -861,6 +924,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. Хэллоу, Африка! Пётр Дмитриевский"
                     tabindex="0"
                   >
                     <svg
@@ -886,8 +950,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -907,8 +972,9 @@
                     87
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -926,8 +992,9 @@
                     44
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -975,6 +1042,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. Обо всём. Пётр Дмитриевский"
                     tabindex="0"
                   >
                     <svg
@@ -1000,8 +1068,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -1021,8 +1090,9 @@
                     64
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -1040,8 +1110,9 @@
                     30
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -1089,6 +1160,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. Физика цвета. Татьяна Флеганова"
                     tabindex="0"
                   >
                     <svg
@@ -1114,8 +1186,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -1135,8 +1208,9 @@
                     58
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -1154,8 +1228,9 @@
                     29
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -1203,6 +1278,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. Источник звука. Пётр Дмитриевский"
                     tabindex="0"
                   >
                     <svg
@@ -1228,8 +1304,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -1249,8 +1326,9 @@
                     55
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -1268,8 +1346,9 @@
                     20
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -1317,6 +1396,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. Правила этикета. Татьяна Флеганова"
                     tabindex="0"
                   >
                     <svg
@@ -1342,8 +1422,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -1363,8 +1444,9 @@
                     24
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -1382,8 +1464,9 @@
                     54
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -1438,6 +1521,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. Европа. XIX век. Дмитрий Гутенберг"
                     tabindex="0"
                   >
                     <svg
@@ -1463,8 +1547,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -1484,8 +1569,9 @@
                     258
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -1503,8 +1589,9 @@
                     104
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -1558,6 +1645,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. О музыке. Дмитрий Гутенберг"
                     tabindex="0"
                   >
                     <svg
@@ -1583,8 +1671,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -1604,8 +1693,9 @@
                     207
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -1623,8 +1713,9 @@
                     34
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -1678,6 +1769,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. Люди сегодня. Анна Васильева"
                     tabindex="0"
                   >
                     <svg
@@ -1703,8 +1795,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -1724,8 +1817,9 @@
                     104
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -1743,8 +1837,9 @@
                     54
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -1798,6 +1893,7 @@
                   </div>
                   <div
                     class="podcasts__block__item__about__row__play-btn"
+                    aria-label="Прослушать. Хэллоу, Африка! Пётр Дмитриевский"
                     tabindex="0"
                   >
                     <svg
@@ -1823,8 +1919,9 @@
                 </div>
                 <div class="podcasts__block__item__about__counters">
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__plays"
+                    aria-label="Количество прослушиваний"
                   >
                     <svg
                       width="10"
@@ -1844,8 +1941,9 @@
                     87
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__likes"
+                    aria-label="Количество лайков"
                   >
                     <svg
                       width="13"
@@ -1863,8 +1961,9 @@
                     44
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="podcasts__block__item__about__counters__shares"
+                    aria-label="Количество репостов"
                   >
                     <svg
                       width="12"
@@ -1899,6 +1998,7 @@
                   >Автор:</label
                 >
                 <select
+                  aria-label="Выбор автора"
                   class="shows__row__archive__top__select"
                   name="shows"
                   id="shows"
@@ -1917,7 +2017,11 @@
               </div>
             </div>
             <div class="shows__row__more">
-              <div class="shows__row__more__item" tabindex="0">
+              <div
+                class="shows__row__more__item"
+                aria-label="Передача. О людях и книгах. Анонсируется отдельно"
+                tabindex="0"
+              >
                 <img
                   src="img/shows-1.png"
                   alt="shows-1"
@@ -1948,7 +2052,11 @@
                   </div>
                 </div>
               </div>
-              <div class="shows__row__more__item" tabindex="0">
+              <div
+                class="shows__row__more__item"
+                aria-label="Передача. Графомания td. По понедельникам в 10:00"
+                tabindex="0"
+              >
                 <img
                   src="img/shows-2.png"
                   alt="shows-2"
@@ -1979,7 +2087,11 @@
                   </div>
                 </div>
               </div>
-              <div class="shows__row__more__item" tabindex="0">
+              <div
+                class="shows__row__more__item"
+                aria-label="Передача. Не Рим, не Троя. По вторникам в 12:00"
+                tabindex="0"
+              >
                 <img
                   src="img/shows-3.png"
                   alt="shows-3"
@@ -2010,7 +2122,11 @@
                   </div>
                 </div>
               </div>
-              <div class="shows__row__more__item" tabindex="0">
+              <div
+                class="shows__row__more__item"
+                aria-label="Передача. Эрудит. По пятницам в 17:00"
+                tabindex="0"
+              >
                 <img
                   src="img/shows-4.png"
                   alt="shows-4"
@@ -2039,7 +2155,11 @@
                   </div>
                 </div>
               </div>
-              <div class="shows__row__more__item" tabindex="0">
+              <div
+                class="shows__row__more__item"
+                aria-label="Передача. Тонкости эпох. По субботам в 10:00"
+                tabindex="0"
+              >
                 <img
                   src="img/shows-5.png"
                   alt="shows-5"
@@ -2070,7 +2190,11 @@
                   </div>
                 </div>
               </div>
-              <div class="shows__row__more__item" tabindex="0">
+              <div
+                class="shows__row__more__item"
+                aria-label="Передача. Живые мысли. По воскресеньям в 15:30"
+                tabindex="0"
+              >
                 <img
                   src="img/shows-6.png"
                   alt="shows-6"
@@ -2129,6 +2253,7 @@
                 <div
                   class="guests__row__accordion-list__item__block"
                   tabindex="0"
+                  aria-label="Гости. Блогеры"
                 >
                   <h3 class="guests__row__accordion-list__item__block__title">
                     Блогеры
@@ -2330,6 +2455,7 @@
               <li class="guests__row__accordion-list__item">
                 <div
                   class="guests__row__accordion-list__item__block"
+                  aria-label="Гости. Арт-критики"
                   tabindex="0"
                 >
                   <h3 class="guests__row__accordion-list__item__block__title">
@@ -2499,6 +2625,7 @@
               <li class="guests__row__accordion-list__item">
                 <div
                   class="guests__row__accordion-list__item__block"
+                  aria-label="Гости. Художники"
                   tabindex="0"
                 >
                   <h3 class="guests__row__accordion-list__item__block__title">
@@ -2646,6 +2773,7 @@
               <li class="guests__row__accordion-list__item">
                 <div
                   class="guests__row__accordion-list__item__block"
+                  aria-label="Гости. Люди науки"
                   tabindex="0"
                 >
                   <h3 class="guests__row__accordion-list__item__block__title">
@@ -2827,6 +2955,7 @@
               <li class="guests__row__accordion-list__item">
                 <div
                   class="guests__row__accordion-list__item__block"
+                  aria-label="Гости. Историки"
                   tabindex="0"
                 >
                   <h3 class="guests__row__accordion-list__item__block__title">
@@ -2996,6 +3125,7 @@
               <li class="guests__row__accordion-list__item">
                 <div
                   class="guests__row__accordion-list__item__block"
+                  aria-label="Гости. Филологи"
                   tabindex="0"
                 >
                   <h3 class="guests__row__accordion-list__item__block__title">
@@ -3178,7 +3308,8 @@
                 </picture>
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    aria-label="instagram"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
                   >
                     <svg
@@ -3195,8 +3326,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3212,8 +3344,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3255,8 +3388,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3272,8 +3406,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3289,8 +3424,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3332,8 +3468,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3349,8 +3486,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3366,8 +3504,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3408,8 +3547,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3425,8 +3565,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3442,8 +3583,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3484,8 +3626,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3501,8 +3644,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3518,8 +3662,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3559,8 +3704,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3576,8 +3722,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3593,8 +3740,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3634,8 +3782,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3651,8 +3800,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3668,8 +3818,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3710,8 +3861,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3727,8 +3879,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3744,8 +3897,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3783,8 +3937,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3800,8 +3955,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3817,8 +3973,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3858,8 +4015,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3875,8 +4033,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3892,8 +4051,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -3933,8 +4093,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -3950,8 +4111,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -3967,8 +4129,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -4008,8 +4171,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -4025,8 +4189,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -4042,8 +4207,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -4083,8 +4249,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -4100,8 +4267,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -4117,8 +4285,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -4160,8 +4329,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -4177,8 +4347,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -4194,8 +4365,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -4237,8 +4409,9 @@
                 />
                 <div class="guests__row__item-about__user__social">
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="instagram"
                   >
                     <svg
                       width="20"
@@ -4254,8 +4427,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="facebook"
                   >
                     <svg
                       width="20"
@@ -4271,8 +4445,9 @@
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="#!"
                     class="guests__row__item-about__user__social__link"
+                    aria-label="twitter"
                   >
                     <svg
                       width="22"
@@ -4537,7 +4712,11 @@
               <span class="playlists__row__left__age"></span>
             </div>
             <div class="playlists__row__right">
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                tabindex="0"
+                aria-label="Плейлисты. Ploho. 3 последних альбома"
+              >
                 <img
                   src="img/playlists-1.png"
                   alt="playlists-1"
@@ -4559,7 +4738,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. Molchat Doma. Все песни"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-2.png"
                   alt="playlists-2"
@@ -4581,7 +4764,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. Motorama. Все синглы"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-3.png"
                   alt="playlists-3"
@@ -4603,7 +4790,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. Human Tetris. 3 последних альбома"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-4.png"
                   alt="playlists-4"
@@ -4614,7 +4805,7 @@
                     Human Tetris
                   </h3>
                   <p class="playlists__row__right__item__about__subtitle">
-                    3 последних альбома
+                    3 последних альбома
                   </p>
                 </div>
                 <div class="playlists__row__right__item__region">
@@ -4625,7 +4816,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. Буерак. Все EP"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-5.png"
                   alt="playlists-5"
@@ -4647,7 +4842,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. Июльские Дни. Альбом «Колокол»"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-6.png"
                   alt="playlists-6"
@@ -4669,7 +4868,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. Joy Division. Лучшее за всё время"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-7.png"
                   alt="playlists-7"
@@ -4691,7 +4894,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. The Cure. Лучшее за всё время"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-8.png"
                   alt="playlists-8"
@@ -4713,7 +4920,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. The Smiths. Период 1984–1988"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-9.png"
                   alt="playlists-9"
@@ -4735,7 +4946,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. New Order. Хиты"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-10.png"
                   alt="playlists-10"
@@ -4757,7 +4972,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. Bauhaus. Все синглы"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-11.png"
                   alt="playlists-11"
@@ -4779,7 +4998,11 @@
                   />
                 </div>
               </div>
-              <div class="playlists__row__right__item" tabindex="0">
+              <div
+                class="playlists__row__right__item"
+                aria-label="Плейлисты. Gang Of Four. 3 последних альбома"
+                tabindex="0"
+              >
                 <img
                   src="img/playlists-12.png"
                   alt="playlists-12"
@@ -5050,6 +5273,7 @@
 
             <form action="" class="about-us__main__form">
               <textarea
+                aria-label="Коментарий"
                 name=""
                 id=""
                 class="about-us__main__form__textarea"
@@ -5057,12 +5281,14 @@
               ></textarea>
               <div class="about-us__main__form__row">
                 <input
+                  aria-label="Ваше имя"
                   name="fio"
                   type="text"
                   class="about-us__main__form__row__input"
                   placeholder="Имя"
                 />
                 <input
+                  aria-label="Ваша почта"
                   type="email"
                   name="email"
                   class="about-us__main__form__row__input"
@@ -5093,7 +5319,11 @@
       <section class="container">
         <div class="footer__row">
           <div class="footer__row__links">
-            <a href="#" class="footer__row__links__logo">
+            <a
+              aria-label="W-Wave логотип"
+              href="#!"
+              class="footer__row__links__logo"
+            >
               <img
                 class="footer__row__links__logo__image"
                 src="img/logo-white.svg"
@@ -5102,7 +5332,11 @@
             </a>
 
             <div class="footer__row__links__social">
-              <a href="#" class="footer__row__links__social__logo">
+              <a
+                aria-label="YouTube"
+                href="#!"
+                class="footer__row__links__social__logo"
+              >
                 <svg
                   width="20"
                   height="16"
@@ -5116,7 +5350,11 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="footer__row__links__social__logo">
+              <a
+                aria-label="Одноклассники"
+                href="#!"
+                class="footer__row__links__social__logo"
+              >
                 <svg
                   width="20"
                   height="20"
@@ -5136,7 +5374,11 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="footer__row__links__social__logo">
+              <a
+                aria-label="Вконтакте"
+                href="#!"
+                class="footer__row__links__social__logo"
+              >
                 <svg
                   width="20"
                   height="20"
@@ -5168,7 +5410,7 @@
                 >
               </li>
               <li class="footer__row__nav__list__item">
-                <a href="#" class="footer__row__nav__list__item__link"
+                <a href="#!" class="footer__row__nav__list__item__link"
                   >Новости</a
                 >
               </li>
@@ -5180,10 +5422,14 @@
                 >
               </li>
               <li class="footer__row__nav__list__item">
-                <a href="#" class="footer__row__nav__list__item__link">Сетка</a>
+                <a href="#!" class="footer__row__nav__list__item__link"
+                  >Сетка</a
+                >
               </li>
               <li class="footer__row__nav__list__item">
-                <a href="#" class="footer__row__nav__list__item__link">Блоги</a>
+                <a href="#!" class="footer__row__nav__list__item__link"
+                  >Блоги</a
+                >
               </li>
               <li class="footer__row__nav__list__item">
                 <a href="#guests" class="footer__row__nav__list__item__link"
@@ -5196,7 +5442,7 @@
                 >
               </li>
               <li class="footer__row__nav__list__item">
-                <a href="#" class="footer__row__nav__list__item__link">Топы</a>
+                <a href="#!" class="footer__row__nav__list__item__link">Топы</a>
               </li>
             </ul>
           </nav>
@@ -5218,7 +5464,7 @@
                 >
               </li>
               <li class="footer__row__nav__list__item">
-                <a href="#" class="footer__row__nav__list__item__link"
+                <a href="#!" class="footer__row__nav__list__item__link"
                   >Новости</a
                 >
               </li>
@@ -5230,10 +5476,14 @@
                 >
               </li>
               <li class="footer__row__nav__list__item">
-                <a href="#" class="footer__row__nav__list__item__link">Сетка</a>
+                <a href="#!" class="footer__row__nav__list__item__link"
+                  >Сетка</a
+                >
               </li>
               <li class="footer__row__nav__list__item">
-                <a href="#" class="footer__row__nav__list__item__link">Блоги</a>
+                <a href="#!" class="footer__row__nav__list__item__link"
+                  >Блоги</a
+                >
               </li>
               <li class="footer__row__nav__list__item">
                 <a href="#guests" class="footer__row__nav__list__item__link"
@@ -5246,7 +5496,7 @@
                 >
               </li>
               <li class="footer__row__nav__list__item">
-                <a href="#" class="footer__row__nav__list__item__link">Топы</a>
+                <a href="#!" class="footer__row__nav__list__item__link">Топы</a>
               </li>
             </ul>
           </nav>

@@ -892,7 +892,7 @@ a {
 
 /* Podcasts */
 .podcasts {
-  padding: 94px 0;
+  padding: 85px 0;
   background-color: #e6e8ec;
 }
 
@@ -1119,7 +1119,7 @@ a {
 }
 /* Shows */
 .shows {
-  padding: 94px 0;
+  padding: 99px 0;
   background-color: var(--white-color);
 }
 
@@ -1457,7 +1457,7 @@ a {
 
 .guests__row {
   display: flex;
-  gap: 35px;
+  gap: 25px;
   margin-right: -10px;
 }
 
@@ -2043,7 +2043,7 @@ a {
   display: flex;
   width: 100%;
   align-items: flex-start;
-  gap: 30px;
+  gap: 25px;
   margin-bottom: 37px;
 }
 

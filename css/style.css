@@ -55,6 +55,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   font-family: "Muller", sans-serif;
   font-style: normal;
   font-weight: 400;

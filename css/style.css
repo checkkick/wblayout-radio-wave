@@ -68,6 +68,15 @@ body {
 *::after {
   scroll-behavior: smooth;
   box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
   padding: 0;
   margin: 0;
 }
@@ -75,6 +84,8 @@ body {
 a {
   text-decoration: none;
   color: #121723;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -2189,7 +2200,6 @@ a {
   line-height: 160%;
   color: #a1a6b4;
   letter-spacing: -0.3px;
-  margin-bottom: 3px;
 }
 
 .about-us__main .swiper {

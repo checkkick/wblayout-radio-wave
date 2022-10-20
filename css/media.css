@@ -6,6 +6,9 @@
   }
   .header__main__flex__logo {
     display: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
   }
   .header__main__flex__nav {
     width: 100%;
@@ -186,6 +189,9 @@
     margin-bottom: 34px;
   }
 
+  .about-us__main {
+    gap: 34px;
+  }
   .about-us__main__description {
     width: 100%;
     padding-right: 295px;

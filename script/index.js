@@ -216,12 +216,12 @@ document
 // -----------------------------------------------------------------------------------
 
 document.querySelector(".podcasts__btn").addEventListener("click", function () {
-  document.querySelectorAll(".podcasts__block__item.hidden").forEach((item) => {
+  document.querySelectorAll(".podcasts-item.hidden").forEach((item) => {
     item.classList.toggle("hidden");
   });
 
   document.querySelector(".podcasts__btn").classList.toggle("hidden");
-  document.querySelector(".podcasts__block").style.margin = "0";
+  document.querySelector(".podcasts-list").style.margin = "0";
 });
 
 // -----------------------------------------------------------------------------------

@@ -52,7 +52,7 @@
   .podcasts {
     padding: 91px 0;
   }
-  .podcasts__block {
+  .podcasts-list {
     margin-bottom: 59px;
     gap: 27px 30px;
   }
@@ -261,14 +261,14 @@
     margin-bottom: 23px;
   }
 
-  .podcasts__block {
+  .podcasts-list {
     margin-right: 0;
     gap: 25px;
   }
-  .podcasts__block__item {
+  .podcasts-item {
     width: 100%;
   }
-  .podcasts__block__item__about__row {
+  .podcasts-item__row {
     padding: 27px 27px 22px 30px;
   }
   .podcasts__btn {
@@ -605,62 +605,62 @@
     line-height: 100%;
     margin-bottom: 20px;
   }
-  .podcasts__block {
+  .podcasts-list {
     margin-bottom: 25px;
     gap: 30px;
   }
-  .podcasts__block__item {
+  .podcasts-item {
     flex-direction: column;
     width: calc(50% - 15px);
   }
-  .podcasts__block__item:nth-child(5),
-  .podcasts__block__item:nth-child(6),
-  .podcasts__block__item:nth-child(7),
-  .podcasts__block__item:nth-child(8) {
+  .podcasts-item:nth-child(5),
+  .podcasts-item:nth-child(6),
+  .podcasts-item:nth-child(7),
+  .podcasts-item:nth-child(8) {
     display: none;
   }
-  .podcasts__block__item__img {
+  .podcasts-item__img {
     max-width: none;
     width: 100%;
     max-height: 71px;
   }
-  .podcasts__block__item__date {
+  .podcasts-item__date {
     bottom: auto;
     top: 0;
   }
-  .podcasts__block__item__about__row {
+  .podcasts-item__row {
     padding: 13px 11px 13px 15px;
   }
-  .podcasts__block__item__about__row__play-btn {
+  .podcasts-item__play-btn {
     padding-top: 1px;
   }
-  .podcasts__block__item__about__row__description__title {
+  .podcasts-item__title {
     font-size: 16px;
     line-height: 16px;
   }
-  .podcasts__block__item__about__row__description__subtitle {
+  .podcasts-item__subtitle {
     font-size: 12px;
     line-height: 12px;
   }
-  .podcasts__block__item__about__row__play-btn svg {
+  .podcasts-item__play-btn svg {
     scale: 0.8;
   }
-  .podcasts__block__item__about__row__play-btn svg circle {
+  .podcasts-item__play-btn svg circle {
     stroke: #6d31ee;
   }
-  .podcasts__block__item__about__row__play-btn svg path {
+  .podcasts-item__play-btn svg path {
     fill: #6d31ee;
   }
-  .podcasts__block__item__about__counters {
+  .podcasts-item__counters {
     padding-top: 5px;
   }
-  .podcasts__block__item__about__counters__plays,
+  .podcasts-item__plays-count,
   .podcasts__block__item__about__counters__likes,
   .podcasts__block__item__about__counters__shares {
     font-size: 12px;
     line-height: 12px;
   }
-  .podcasts__block__item__about__counters__plays svg,
+  .podcasts-item__plays-count svg,
   .podcasts__block__item__about__counters__likes svg,
   .podcasts__block__item__about__counters__shares svg {
     scale: 0.8;
@@ -910,7 +910,7 @@
 }
 
 @media (max-width: 535px) {
-  .podcasts__block__item {
+  .podcasts-item {
     width: 100%;
   }
 

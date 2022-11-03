@@ -990,7 +990,7 @@ body {
   background-color: #4f28a5;
 }
 
-.podcasts__block {
+.podcasts-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1000,18 +1000,18 @@ body {
   margin-right: -10px;
 }
 
-.podcasts__block__item {
+.podcasts-item {
   position: relative;
   background-color: var(--white-color);
   display: flex;
   align-items: stretch;
   width: calc(50% - 15px);
 }
-.podcasts__block__item.hidden {
+.podcasts-item.hidden {
   display: none;
 }
 
-.podcasts__block__item__date {
+.podcasts-item__date {
   padding: 3px 6px;
   margin: 0;
   position: absolute;
@@ -1023,62 +1023,62 @@ body {
   background-color: #e6e8ec;
 }
 
-.podcasts__block__item__img {
+.podcasts-item__img {
   height: 100%;
   max-width: 112px;
 }
 
-.podcasts__block__item__about {
+.podcasts-item__about {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.podcasts__block__item__about__row {
+.podcasts-item__row {
   display: flex;
   justify-content: space-between;
   padding: 21px 27px 21px 30px;
 }
 
-.podcasts__block__item__about__row__play-btn {
+.podcasts-item__play-btn {
   outline: none;
   cursor: pointer;
   padding-top: 7px;
 }
-.podcasts__block__item__about__row__play-btn svg circle {
+.podcasts-item__play-btn svg circle {
   transition: stroke 0.2s ease-in-out, fill 0.2s ease-in-out;
 }
-.podcasts__block__item__about__row__play-btn svg path {
+.podcasts-item__play-btn svg path {
   transition: fill 0.2s ease-in-out;
 }
-.podcasts__block__item__about__row__play-btn:hover svg circle {
+.podcasts-item__play-btn:hover svg circle {
   stroke: #6d31ee;
 }
-.podcasts__block__item__about__row__play-btn:hover svg path {
+.podcasts-item__play-btn:hover svg path {
   fill: #6d31ee;
 }
-.podcasts__block__item__about__row__play-btn:focus-visible svg circle {
+.podcasts-item__play-btn:focus-visible svg circle {
   stroke: #aa9dfa;
 }
-.podcasts__block__item__about__row__play-btn:focus-visible svg path {
+.podcasts-item__play-btn:focus-visible svg path {
   fill: #aa9dfa;
 }
-.podcasts__block__item__about__row__play-btn:active svg circle {
+.podcasts-item__play-btn:active svg circle {
   stroke: #4f28a5;
   fill: #4f28a5;
 }
-.podcasts__block__item__about__row__play-btn:active svg path {
+.podcasts-item__play-btn:active svg path {
   fill: #fff;
 }
 
-.podcasts__block__item__about__row__description__time {
+.podcasts-item__time {
   font-size: 12px;
   line-height: 12px;
   padding: 0;
   margin: 0 0 8px 0;
 }
 
-.podcasts__block__item__about__row__description__title {
+.podcasts-item__title {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -1086,7 +1086,7 @@ body {
   margin: 0 0 4px 0;
 }
 
-.podcasts__block__item__about__row__description__subtitle {
+.podcasts-item__subtitle {
   font-size: 16px;
   padding: 0;
   margin: 0;
@@ -1094,7 +1094,7 @@ body {
   color: #a1a6b4;
 }
 
-.podcasts__block__item__about__counters {
+.podcasts-item__counters {
   display: flex;
   align-items: center;
   gap: 28px;
@@ -1102,7 +1102,7 @@ body {
   border-top: 1px solid #e6e8ec;
 }
 
-.podcasts__block__item__about__counters__plays {
+.podcasts-item__plays-count {
   outline: none;
   font-size: 16px;
   line-height: 16px;
@@ -1144,38 +1144,38 @@ body {
   margin: 0;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-.podcasts__block__item__about__counters__plays:hover,
+.podcasts-item__plays-count:hover,
 .podcasts__block__item__about__counters__likes:hover,
 .podcasts__block__item__about__counters__shares:hover {
   color: #6d31ee;
 }
-.podcasts__block__item__about__counters__plays:focus-visible,
+.podcasts-item__plays-count:focus-visible,
 .podcasts__block__item__about__counters__likes:focus-visible,
 .podcasts__block__item__about__counters__shares:focus-visible {
   color: #ffffff;
   background-color: #aa9dfa;
 }
-.podcasts__block__item__about__counters__plays:active,
+.podcasts-item__plays-count:active,
 .podcasts__block__item__about__counters__likes:active,
 .podcasts__block__item__about__counters__shares:active {
   color: #4f28a5;
 }
-.podcasts__block__item__about__counters__plays svg path,
+.podcasts-item__plays-count svg path,
 .podcasts__block__item__about__counters__likes svg path,
 .podcasts__block__item__about__counters__shares svg path {
   transition: fill 0.2s ease-in-out;
 }
-.podcasts__block__item__about__counters__plays:hover svg path,
+.podcasts-item__plays-count:hover svg path,
 .podcasts__block__item__about__counters__likes:hover svg path,
 .podcasts__block__item__about__counters__shares:hover svg path {
   fill: #6d31ee;
 }
-.podcasts__block__item__about__counters__plays:focus-visible svg path,
+.podcasts-item__plays-count:focus-visible svg path,
 .podcasts__block__item__about__counters__likes:focus-visible svg path,
 .podcasts__block__item__about__counters__shares:focus-visible svg path {
   fill: #ffffff;
 }
-.podcasts__block__item__about__counters__plays:active svg path,
+.podcasts-item__plays-count:active svg path,
 .podcasts__block__item__about__counters__likes:active svg path,
 .podcasts__block__item__about__counters__shares:active svg path {
   fill: #4f28a5;

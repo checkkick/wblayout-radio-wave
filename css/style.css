@@ -2296,14 +2296,14 @@ body {
   gap: 30px;
 }
 
-.about-us__main__description {
+.about-us__description {
   width: 100%;
   padding-right: 475px;
   background: url("../img/about-us-background.svg") no-repeat center right /
     445px 290px;
 }
 
-.about-us__main__description__title {
+.about-us__title {
   font-weight: 400;
   font-size: 48px;
   line-height: 100%;
@@ -2312,7 +2312,7 @@ body {
   margin: 0 0 12px 0;
 }
 
-.about-us__main__description__subtitle {
+.about-us__subtitle {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -2321,7 +2321,7 @@ body {
   margin: 0 0 8px 0;
 }
 
-.about-us__main__description__text {
+.about-us__text {
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
@@ -2418,7 +2418,7 @@ body {
   content: none;
 }
 
-.about-us__main__form {
+.form {
   max-width: 920px;
   width: 100%;
   display: flex;
@@ -2427,7 +2427,7 @@ body {
   gap: 30px;
 }
 
-.about-us__main__form__textarea {
+.form__textarea {
   width: 100%;
   background: transparent;
   outline: none;
@@ -2443,7 +2443,7 @@ body {
   color: #ffffff;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-.about-us__main__form__textarea::placeholder {
+.form__textarea::placeholder {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -2451,25 +2451,25 @@ body {
   padding: 0;
   margin: 0;
 }
-.about-us__main__form__textarea:hover {
+.form__textarea:hover {
   background-color: #292e39;
 }
-.about-us__main__form__textarea:focus-visible {
+.form__textarea:focus-visible {
   background-color: #292e39;
   border-color: #aa9dfa;
 }
-.about-us__main__form__textarea:active {
+.form__textarea:active {
   background-color: transparent;
   border-color: #ffffff;
 }
 
-.about-us__main__form__row {
+.form__block {
   width: 100%;
   gap: 30px;
   display: flex;
 }
 
-.about-us__main__form__row__input {
+.form__input {
   width: 100%;
   outline: none;
   padding: 25px 32px;
@@ -2483,22 +2483,22 @@ body {
   color: #ffffff;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-.about-us__main__form__row__input::placeholder {
+.form__input::placeholder {
   color: #a1a6b4;
 }
-.about-us__main__form__row__input:hover {
+.form__input:hover {
   background-color: #292e39;
 }
-.about-us__main__form__row__input:focus-visible {
+.form__input:focus-visible {
   background-color: #292e39;
   border-color: #aa9dfa;
 }
-.about-us__main__form__row__input:active {
+.form__input:active {
   background-color: transparent;
   border-color: #ffffff;
 }
 
-.about-us__main__form__btn {
+.form__btn {
   cursor: pointer;
   padding: 25px 54px;
   margin: 0;
@@ -2512,25 +2512,24 @@ body {
   color: #ffffff;
   transition: background-color 0.2s ease-in-out, outline 0.2s ease-in-out;
 }
-.about-us__main__form__btn:hover {
+.form__btn:hover {
   background-color: #aa9dfa;
 }
-.about-us__main__form__btn:focus-visible {
+.form__btn:focus-visible {
   background-color: #aa9dfa;
   outline: 2px solid #4f28a5;
 }
-.about-us__main__form__btn:active {
+.form__btn:active {
   background-color: #4f28a5;
 }
 
-.about-us__main__form__agreement-checkbox {
+.form__agreement-checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.about-us__main__form__agreement-checkbox
-  + .about-us__main__form__agreement-label {
+.form__agreement-checkbox + .form__agreement-label {
   cursor: pointer;
   display: flex;
   align-items: flex-end;
@@ -2543,8 +2542,7 @@ body {
   color: #ffffff;
 }
 
-.about-us__main__form__agreement-checkbox
-  + .about-us__main__form__agreement-label::before {
+.form__agreement-checkbox + .form__agreement-label::before {
   content: "";
   display: inline-block;
   width: 14px;
@@ -2558,25 +2556,23 @@ body {
   background-size: 50% 50%;
 }
 
-.about-us__main__form__agreement-checkbox:not(:disabled):not(:checked)
-  + .about-us__main__form__agreement-label:hover::before {
+.form__agreement-checkbox:not(:disabled):not(:checked)
+  + .form__agreement-label:hover::before {
   border-color: #aa9dfa;
 }
 
-.about-us__main__form__agreement-checkbox:not(:disabled):active
-  + .about-us__main__form__agreement-label::before {
+.form__agreement-checkbox:not(:disabled):active
+  + .form__agreement-label::before {
   background-color: #aa9dfa;
   border-color: #aa9dfa;
 }
 
-.about-us__main__form__agreement-checkbox:focus
-  + .about-us__main__form__agreement-label::before {
+.form__agreement-checkbox:focus + .form__agreement-label::before {
   outline: 1px solid #aa9dfa;
   outline-offset: 1px;
 }
 
-.about-us__main__form__agreement-checkbox:checked
-  + .about-us__main__form__agreement-label::before {
+.form__agreement-checkbox:checked + .form__agreement-label::before {
   background-image: url("../img/check.svg");
 }
 

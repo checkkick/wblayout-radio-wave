@@ -4625,12 +4625,12 @@
       <section class="about-us" id="about-us">
         <div class="container">
           <div class="about-us__main">
-            <div class="about-us__main__description">
-              <h2 class="about-us__main__description__title">О нас</h2>
-              <p class="about-us__main__description__subtitle">
+            <div class="about-us__description">
+              <h2 class="about-us__title">О нас</h2>
+              <p class="about-us__subtitle">
                 Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
               </p>
-              <p class="about-us__main__description__text">
+              <p class="about-us__text">
                 Друзья, мы будем очень рады, если вы поможете стать нам лучше.
                 Нам важен каждый слушатель, поэтому вы можете поделиться
                 обратной связью о наших предеачах, темах, подборках и вообще
@@ -4818,42 +4818,38 @@
               </div>
             </div>
 
-            <form class="about-us__main__form" action="send.php" method="post">
+            <form class="form" action="send.php" method="post">
               <textarea
                 aria-label="Коментарий"
                 name="comment"
                 id="comment"
-                class="about-us__main__form__textarea"
+                class="form__textarea"
                 placeholder="Что скажете?"
               ></textarea>
-              <div class="about-us__main__form__row">
+              <div class="form__block">
                 <input
                   aria-label="Ваше имя"
                   name="fio"
                   type="text"
-                  class="about-us__main__form__row__input"
+                  class="form__input"
                   placeholder="Имя"
                 />
                 <input
                   aria-label="Ваша почта"
                   type="email"
                   name="email"
-                  class="about-us__main__form__row__input"
+                  class="form__input"
                   placeholder="Email"
                 />
               </div>
-              <button type="submit" class="about-us__main__form__btn">
-                Отправить
-              </button>
+              <button type="submit" class="form__btn">Отправить</button>
               <input
-                class="about-us__main__form__agreement-checkbox"
+                class="form__agreement-checkbox"
                 type="checkbox"
                 name="agreement"
                 id="agreement"
               />
-              <label
-                class="about-us__main__form__agreement-label"
-                for="agreement"
+              <label class="form__agreement-label" for="agreement"
                 >Согласен на обработку персональных данных</label
               >
             </form>

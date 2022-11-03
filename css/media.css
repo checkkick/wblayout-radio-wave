@@ -17,35 +17,35 @@
   .header__main__flex__nav__list {
     gap: 39px;
   }
-  .header__main__mobile {
+  .header-main-mobile {
     display: block;
   }
-  .header__row__flex {
+  .header-subnav {
     padding: 15px 0;
   }
-  .header__row__flex__age {
+  .header-subnav__age {
     display: none;
   }
-  .header__row__flex__themes-list {
+  .header-subnav__list {
     gap: 8px;
     padding-right: 30px;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .header__row__flex__play {
+  .header-player {
     margin-top: 0;
     margin-bottom: 0;
     padding-right: 7px;
     padding-left: 6px;
   }
-  .header__row__flex__play__block__title {
+  .header-player__title {
     width: 95px;
   }
-  .header__banner__flex {
+  .header-banner {
     background: url(../img/microphone.png) no-repeat 103% center / 256px 262px;
     padding: 90px 286px 90px 0;
   }
-  .header__banner__flex__text {
+  .header-banner__text {
     margin-bottom: 20px;
   }
 
@@ -211,19 +211,19 @@
     padding: 0 114px;
   }
 
-  .modal__window {
+  .modal-window {
     max-width: 539px;
     padding: 60px 40px;
   }
-  .modal__window__login__text {
+  .modal-window__text {
     letter-spacing: -0.3px;
   }
 
-  .header__mobile-menu {
+  .mobile-menu {
     display: block;
   }
 
-  .header__row__flex {
+  .header-subnav {
     margin-right: 0;
     padding: 18px 0;
   }
@@ -233,31 +233,31 @@
   .header__main__flex__burger {
     display: flex;
   }
-  .header__row__flex__themes-list {
+  .header-subnav__list {
     padding: 0;
     border: none;
     gap: 9px;
   }
-  .header__row__flex__play:not(.last) {
+  .header-player:not(.last) {
     display: none;
   }
-  .header__row__flex__play.last {
+  .header-player--last {
     border: none;
     margin: 0;
     padding: 0;
   }
-  .header__row__flex__play__block {
+  .header-player__block {
     display: none;
   }
-  .header__row__flex__play__logo {
+  .header-player__logo {
     display: flex;
     align-items: center;
   }
-  .header__banner__flex {
+  .header-banner {
     padding-right: 0;
     background: none;
   }
-  .header__banner__flex__text {
+  .header-banner__text {
     margin-bottom: 23px;
   }
 
@@ -489,56 +489,56 @@
   .modal {
     padding: 55px 32px;
   }
-  .modal__window {
+  .modal-window {
     padding: 40px 20px;
   }
 
-  .header__mobile {
+  .mobile-header {
     display: flex;
   }
-  .header__row__flex {
+  .header-subnav {
     flex-direction: column;
   }
-  .header__row {
+  .header-border {
     display: none;
   }
 
-  .header__mobile-menu::before,
-  .header__mobile-menu::after {
+  .mobile-menu::before,
+  .mobile-menu::after {
     content: none;
   }
-  .header__mobile-menu__close {
+  .mobile-menu__close {
     top: 13px;
     left: 32px;
   }
-  .header__mobile-menu {
+  .mobile-menu {
     padding: 0;
   }
-  .header__mobile-menu__nav {
+  .mobile-nav {
     padding: 61px 32px 24px;
     height: 50%;
   }
-  .header__mobile-menu__nav__list {
+  .mobile-nav__list {
     gap: 40px 48px;
     width: 100%;
     justify-content: space-evenly;
   }
-  .header__mobile-menu__nav__list__item {
+  .mobile-nav__item {
     max-width: fit-content;
     height: calc((100% / 3) - (40px * 2) / 3);
     width: calc((100% / 2) - (48px * 1) / 2);
   }
-  .header__mobile-menu__submenu {
+  .mobile-submenu {
     display: flex;
   }
-  .header__main__mobile {
+  .header-main-mobile {
     padding: 9px 0;
   }
-  .header__main__mobile__logo__img {
+  .header-main-mobile__img {
     width: 87px;
     height: 10px;
   }
-  .header__main__mobile .container {
+  .header-main-mobile .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -546,11 +546,11 @@
   .header__main__flex {
     padding: 10px 0;
   }
-  .header__main__flex__buttons__enter.mobile {
+  .header__enter-button--mobile {
     display: block;
     padding: 8px 22px;
   }
-  .header__main__flex__buttons__enter:not(.mobile) {
+  .header__enter-button:not(.header__enter-button--mobile) {
     display: none;
   }
   .header__main__flex__buttons__search__hidden {
@@ -579,19 +579,19 @@
       transform: translateX(240px);
     }
   }
-  .header__banner__flex {
+  .header-banner {
     padding: 40px 0;
   }
-  .header__banner__flex__title {
+  .header-banner__title {
     font-size: 32px;
     line-height: 100%;
     margin-bottom: 7px;
   }
-  .header__banner__flex__text {
+  .header-banner__text {
     font-size: 14px;
     margin-bottom: 19px;
   }
-  .header__banner__flex__btn {
+  .header-banner__btn {
     font-size: 16px;
     line-height: 16px;
     padding: 17px 45px;
@@ -914,49 +914,49 @@
     width: 100%;
   }
 
-  .modal__window__login {
+  .modal-window__login {
     padding-bottom: 30px;
     margin-bottom: 10px;
   }
-  .modal__window__close-btn {
+  .modal-window__close-btn {
     top: 20px;
     right: 20px;
     scale: 0.8;
   }
-  .modal__window__login__title {
+  .modal-window__title {
     font-size: 24px;
     line-height: 100%;
     margin-bottom: 8px;
   }
-  .modal__window__login__text {
+  .modal-window__text {
     color: #a1a6b4;
     font-size: 12px;
     line-height: 24px;
     margin-bottom: 20px;
   }
-  .modal__window__login__text__link {
+  .modal-window__link {
     font-size: 12px;
     line-height: 150%;
   }
-  .modal__window__login__input {
+  .modal-window__input {
     padding: 18px 12px;
     font-size: 16px;
     line-height: 16px;
     border-radius: 40px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
   }
-  .modal__window__login__btn {
+  .modal-window__login-btn {
     padding: 12px 57px;
     font-size: 16px;
     line-height: 16px;
   }
-  .modal__window__help-text {
+  .modal-window__help-text {
     font-size: 12px;
     line-height: 24px;
     color: #a1a6b4;
     margin-bottom: 10px;
   }
-  .modal__window__social {
+  .modal-social {
     justify-content: space-between;
   }
 

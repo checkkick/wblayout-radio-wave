@@ -14,99 +14,70 @@
   </head>
   <body>
     <header class="header">
-      <section style="display: none" class="header__mobile-menu inactive">
+      <section style="display: none" class="mobile-menu mobile-menu--inactive">
         <span
-          class="header__mobile-menu__close"
+          class="mobile-menu__close"
           aria-label="Кнопка закрытия меню"
         ></span>
-        <nav class="header__mobile-menu__nav">
-          <ul class="header__mobile-menu__nav__list">
-            <li class="header__mobile-menu__nav__list__item">
-              <a
-                href="#podcasts"
-                class="header__mobile-menu__nav__list__item__link"
-                >Подкасты</a
-              >
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="#podcasts" class="mobile-nav__link">Подкасты</a>
             </li>
-            <li class="header__mobile-menu__nav__list__item">
-              <a
-                href="#shows-section"
-                class="header__mobile-menu__nav__list__item__link"
-                >Передачи</a
-              >
+            <li class="mobile-nav__item">
+              <a href="#shows-section" class="mobile-nav__link">Передачи</a>
             </li>
-            <li class="header__mobile-menu__nav__list__item">
-              <a
-                href="#guests"
-                class="header__mobile-menu__nav__list__item__link"
-                >Гости</a
-              >
+            <li class="mobile-nav__item">
+              <a href="#guests" class="mobile-nav__link">Гости</a>
             </li>
-            <li class="header__mobile-menu__nav__list__item">
-              <a
-                href="#playlists"
-                class="header__mobile-menu__nav__list__item__link"
-                >Плейлисты</a
-              >
+            <li class="mobile-nav__item">
+              <a href="#playlists" class="mobile-nav__link">Плейлисты</a>
             </li>
-            <li class="header__mobile-menu__nav__list__item">
-              <a
-                href="#about-us"
-                class="header__mobile-menu__nav__list__item__link"
-                >О нас</a
-              >
+            <li class="mobile-nav__item">
+              <a href="#about-us" class="mobile-nav__link">О нас</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="header__mobile-menu__submenu">
-          <li class="header__mobile-menu__submenu__item">
-            <a href="" class="header__mobile-menu__submenu__item__link"
-              >Новости</a
-            >
+        <ul class="mobile-submenu">
+          <li class="mobile-submenu__item">
+            <a href="" class="mobile-submenu__link">Новости</a>
           </li>
-          <li class="header__mobile-menu__submenu__item">
-            <a href="" class="header__mobile-menu__submenu__item__link"
-              >Опросы</a
-            >
+          <li class="mobile-submenu__item">
+            <a href="" class="mobile-submenu__link">Опросы</a>
           </li>
-          <li class="header__mobile-menu__submenu__item">
-            <a href="" class="header__mobile-menu__submenu__item__link"
-              >Блоги</a
-            >
+          <li class="mobile-submenu__item">
+            <a href="" class="mobile-submenu__link">Блоги</a>
           </li>
-          <li class="header__mobile-menu__submenu__item">
-            <a href="" class="header__mobile-menu__submenu__item__link"
-              >Рейтинги</a
-            >
+          <li class="mobile-submenu__item">
+            <a href="" class="mobile-submenu__link">Рейтинги</a>
           </li>
-          <li class="header__mobile-menu__submenu__item">
-            <a href="" class="header__mobile-menu__submenu__item__link">Топы</a>
+          <li class="mobile-submenu__item">
+            <a href="" class="mobile-submenu__link">Топы</a>
           </li>
-          <li class="header__mobile-menu__submenu__item">
-            <a href="" class="header__mobile-menu__submenu__item__link"
-              >Реклама</a
-            >
+          <li class="mobile-submenu__item">
+            <a href="" class="mobile-submenu__link">Реклама</a>
           </li>
         </ul>
       </section>
 
-      <section class="header__main">
-        <div class="header__main__mobile">
+      <section>
+        <div class="header-main-mobile">
           <div class="container">
             <a
               aria-label="Логотип W-Wave"
               href="#!"
-              class="header__main__mobile__logo"
+              class="header-main-mobile__logo"
             >
               <img
-                class="header__main__mobile__logo__img"
+                class="header-main-mobile__img"
                 src="img/logo.svg"
                 alt="logo"
               />
             </a>
             <button
-              class="header__main__flex__buttons__enter mobile"
+              class="header__enter-button header__enter-button--mobile"
               aria-label="Кнопка входа"
             >
               Вход
@@ -202,10 +173,7 @@
                   type="text"
                 />
               </div>
-              <button
-                class="header__main__flex__buttons__enter"
-                aria-label="Кнопка входа"
-              >
+              <button class="header__enter-button" aria-label="Кнопка входа">
                 Вход
               </button>
             </div>
@@ -214,36 +182,32 @@
       </section>
 
       <section class="modal">
-        <div class="modal__window">
-          <div class="modal__window__login">
-            <h2 class="modal__window__login__title">Вход</h2>
-            <p class="modal__window__login__text">
+        <div class="modal-window">
+          <div class="modal-window__login">
+            <h2 class="modal-window__title">Вход</h2>
+            <p class="modal-window__text">
               Если у вас ещё нет аккаунта,
-              <a href="#!" class="modal__window__login__text__link"
-                >зарегестрируйтесь</a
-              >
+              <a href="#!" class="modal-window__link">зарегестрируйтесь</a>
             </p>
             <input
               type="text"
-              class="modal__window__login__input"
+              class="modal-window__input"
               placeholder="Логин"
             />
             <input
               type="password"
-              class="modal__window__login__input"
+              class="modal-window__input"
               placeholder="Пароль"
             />
-            <button class="modal__window__login__btn" aria-label="Кнопка входа">
+            <button class="modal-window__login-btn" aria-label="Кнопка входа">
               Войти
             </button>
           </div>
-          <p class="modal__window__help-text">Войти с помощью:</p>
-          <div class="modal__window__social">
-            <a
-              aria-label="facebook"
-              href="#!"
-              class="modal__window__social__link"
-            >
+
+          <p class="modal-window__help-text">Войти с помощью:</p>
+
+          <div class="modal-social">
+            <a aria-label="facebook" href="#!" class="modal-social__link">
               <svg
                 width="34"
                 height="34"
@@ -257,11 +221,7 @@
                 />
               </svg>
             </a>
-            <a
-              aria-label="Вконтакте"
-              href="#!"
-              class="modal__window__social__link"
-            >
+            <a aria-label="Вконтакте" href="#!" class="modal-social__link">
               <svg
                 width="34"
                 height="34"
@@ -276,11 +236,7 @@
                 />
               </svg>
             </a>
-            <a
-              aria-label="google"
-              href="#!"
-              class="modal__window__social__link"
-            >
+            <a aria-label="google" href="#!" class="modal-social__link">
               <svg
                 width="34"
                 height="34"
@@ -296,10 +252,11 @@
               </svg>
             </a>
           </div>
+
           <a
             aria-label="Кнопка закрыть"
             href="#!"
-            class="modal__window__close-btn"
+            class="modal-window__close-btn"
           >
             <svg
               width="42"
@@ -325,25 +282,25 @@
         </div>
       </section>
 
-      <section class="header__mobile">
-        <div class="header__mobile__row">
+      <section class="mobile-header">
+        <div class="mobile-header__row">
           <div class="container">
             <img
-              class="header__mobile__row__logo"
+              class="mobile-header__logo"
               src="img/header-plus.svg"
               alt="plus"
             />
-            <p class="header__mobile__row__text">Что в эфире?</p>
+            <p class="mobile-header__text">Что в эфире?</p>
           </div>
         </div>
 
-        <div class="header__mobile__hidden">
+        <div class="modile-hidden-block">
           <div class="container">
-            <div class="header__mobile__hidden__play">
+            <div class="modile-hidden-block__play">
               <a
                 aria-label="Ранее в эфире 'Музыка'"
                 href="#!"
-                class="header__mobile__hidden__play__logo"
+                class="modile-hidden-block__logo"
               >
                 <svg
                   width="20"
@@ -358,21 +315,17 @@
                   />
                 </svg>
               </a>
-              <div class="header__mobile__hidden__play__block">
-                <p class="header__mobile__hidden__play__block__title">
-                  Ранее в эфире
-                </p>
-                <p class="header__mobile__hidden__play__block__name">
-                  «Музыка»
-                </p>
+              <div>
+                <p class="modile-hidden-block__title">Ранее в эфире</p>
+                <p class="modile-hidden-block__subtitle">«Музыка»</p>
               </div>
             </div>
 
-            <div class="header__mobile__hidden__play">
+            <div class="modile-hidden-block__play">
               <a
                 aria-label="Сейчас в эфире 'Как так?'"
                 href="#!"
-                class="header__mobile__hidden__play__logo"
+                class="modile-hidden-block__logo"
               >
                 <svg
                   width="20"
@@ -387,59 +340,44 @@
                   />
                 </svg>
               </a>
-              <div class="header__mobile__hidden__play__block">
-                <p class="header__mobile__hidden__play__block__title">
-                  Сейчас в эфире
-                </p>
-                <p class="header__mobile__hidden__play__block__name">
-                  «Как так?»
-                </p>
+              <div>
+                <p class="modile-hidden-block__title">Сейчас в эфире</p>
+                <p class="modile-hidden-block__subtitle">«Как так?»</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="header__row">
+      <section class="header-border">
         <div class="container">
-          <div class="header__row__flex">
-            <ul class="header__row__flex__themes-list">
-              <li class="header__row__flex__themes-list__item">
-                <a href="#!" class="header__row__flex__themes-list__item__link"
-                  >Новости</a
-                >
+          <div class="header-subnav">
+            <ul class="header-subnav__list">
+              <li>
+                <a href="#!" class="header-subnav__link">Новости</a>
               </li>
-              <li class="header__row__flex__themes-list__item">
-                <a href="#!" class="header__row__flex__themes-list__item__link"
-                  >Блоги</a
-                >
+              <li>
+                <a href="#!" class="header-subnav__link">Блоги</a>
               </li>
-              <li class="header__row__flex__themes-list__item">
-                <a href="#!" class="header__row__flex__themes-list__item__link"
-                  >Топы</a
-                >
+              <li>
+                <a href="#!" class="header-subnav__link">Топы</a>
               </li>
-              <li class="header__row__flex__themes-list__item">
-                <a href="#!" class="header__row__flex__themes-list__item__link"
-                  >Опросы</a
-                >
+              <li>
+                <a href="#!" class="header-subnav__link">Опросы</a>
               </li>
-              <li class="header__row__flex__themes-list__item">
-                <a href="#!" class="header__row__flex__themes-list__item__link"
-                  >Рейтинги</a
-                >
+              <li>
+                <a href="#!" class="header-subnav__link">Рейтинги</a>
               </li>
-              <li class="header__row__flex__themes-list__item">
-                <a href="#!" class="header__row__flex__themes-list__item__link"
-                  >Реклама</a
-                >
+              <li>
+                <a href="#!" class="header-subnav__link">Реклама</a>
               </li>
             </ul>
-            <div class="header__row__flex__play">
+
+            <div class="header-player">
               <a
                 href="#!"
                 aria-label="Ранее в эфире 'Музыка'"
-                class="header__row__flex__play__logo"
+                class="header-player__logo"
               >
                 <svg
                   width="20"
@@ -454,18 +392,17 @@
                   />
                 </svg>
               </a>
-              <div class="header__row__flex__play__block">
-                <p class="header__row__flex__play__block__title">
-                  Ранее в эфире
-                </p>
-                <p class="header__row__flex__play__block__name">«Музыка»</p>
+              <div class="header-player__block">
+                <p class="header-player__title">Ранее в эфире</p>
+                <p class="header-player__subtitle">«Музыка»</p>
               </div>
             </div>
-            <div class="header__row__flex__play last">
+
+            <div class="header-player header-player--last">
               <a
                 aria-label="Сейчас в эфире 'Как так?'"
                 href="#!"
-                class="header__row__flex__play__logo"
+                class="header-player__logo"
               >
                 <svg
                   width="20"
@@ -480,33 +417,33 @@
                   />
                 </svg>
               </a>
-              <div class="header__row__flex__play__block">
-                <p class="header__row__flex__play__block__title">
-                  Сейчас в эфире
-                </p>
-                <p class="header__row__flex__play__block__name">«Как так?»</p>
+              <div class="header-player__block">
+                <p class="header-player__title">Сейчас в эфире</p>
+                <p class="header-player__subtitle">«Как так?»</p>
               </div>
             </div>
-            <span class="header__row__flex__age"></span>
+            <span class="header-subnav__age"></span>
           </div>
         </div>
       </section>
 
-      <section class="header__banner">
+      <section>
         <div class="container">
-          <div class="header__banner__flex">
-            <h1 class="header__banner__flex__title">
+          <div class="header-banner">
+            <h1 class="header-banner__title">
               Радио
-              <span class="header__banner__flex__title__italic">W-Wawe</span>
+              <span class="header-banner__title header-banner__title--italic"
+                >W-Wawe</span
+              >
             </h1>
-            <p class="header__banner__flex__text">
+            <p class="header-banner__text">
               Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были изданием,
               а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим
               о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь,
               помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое
               другое:)
             </p>
-            <button class="header__banner__flex__btn">Слушать эфир</button>
+            <button class="header-banner__btn">Слушать эфир</button>
           </div>
         </div>
       </section>

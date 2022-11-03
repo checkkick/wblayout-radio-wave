@@ -1783,15 +1783,13 @@
       <section class="shows" id="shows-section">
         <div class="container">
           <div class="shows__row">
-            <div class="shows__row__archive">
-              <div class="shows__row__archive__top">
-                <h2 class="shows__row__archive__top__title">Передачи</h2>
-                <label class="shows__row__archive__top__label" for="shows"
-                  >Автор:</label
-                >
+            <div class="shows-archive">
+              <div class="shows-archive__top">
+                <h2 class="shows-archive__title">Передачи</h2>
+                <label class="shows-archive__label" for="shows">Автор:</label>
                 <select
                   aria-label="Выбор автора"
-                  class="shows__row__archive__top__select"
+                  class="shows-archive__select"
                   name="shows"
                   id="shows"
                 >
@@ -1801,34 +1799,29 @@
                   <option value="Пётр Дмитриевский">Пётр Дмитриевский</option>
                 </select>
               </div>
-              <div class="shows__row__archive__bottom">
-                <button class="shows__row__archive__bottom__btn">Архив</button>
-                <p class="shows__row__archive__bottom__text">
+              <div class="shows-archive__bottom">
+                <button class="shows-archive__btn">Архив</button>
+                <p class="shows-archive__text">
                   В архив попадают все передачи, которые вы пропустили! Enjoy:)
                 </p>
               </div>
             </div>
-            <div class="shows__row__more">
+            <div class="shows-list">
               <div
-                class="shows__row__more__item"
+                class="shows-item"
                 aria-label="Передача. О людях и книгах. Анонсируется отдельно"
                 tabindex="0"
               >
                 <img
                   src="img/shows-1.png"
                   alt="shows-1"
-                  class="shows__row__more__item__image"
+                  class="shows-item__image"
                 />
-                <div class="shows__row__more__item__about">
-                  <h3 class="shows__row__more__item__about__title">
-                    О людях и книгах
-                  </h3>
-                  <p class="shows__row__more__item__about__subtitle">
-                    Анонсируется отдельно
-                  </p>
-                  <div class="shows__row__more__item__about__link">
+                <div class="shows-item__about">
+                  <h3 class="shows-item__title">О людях и книгах</h3>
+                  <p class="shows-item__subtitle">Анонсируется отдельно</p>
+                  <div class="shows-item__link">
                     Подробнее
-
                     <svg
                       width="21"
                       height="8"
@@ -1845,23 +1838,19 @@
                 </div>
               </div>
               <div
-                class="shows__row__more__item"
+                class="shows-item"
                 aria-label="Передача. Графомания td. По понедельникам в 10:00"
                 tabindex="0"
               >
                 <img
                   src="img/shows-2.png"
                   alt="shows-2"
-                  class="shows__row__more__item__image"
+                  class="shows-item__image"
                 />
-                <div class="shows__row__more__item__about">
-                  <h3 class="shows__row__more__item__about__title">
-                    Графомания td
-                  </h3>
-                  <p class="shows__row__more__item__about__subtitle">
-                    По понедельникам в 10:00
-                  </p>
-                  <div class="shows__row__more__item__about__link">
+                <div class="shows-item__about">
+                  <h3 class="shows-item__title">Графомания td</h3>
+                  <p class="shows-item__subtitle">По понедельникам в 10:00</p>
+                  <div class="shows-item__link">
                     Подробнее
 
                     <svg
@@ -1880,23 +1869,19 @@
                 </div>
               </div>
               <div
-                class="shows__row__more__item"
+                class="shows-item"
                 aria-label="Передача. Не Рим, не Троя. По вторникам в 12:00"
                 tabindex="0"
               >
                 <img
                   src="img/shows-3.png"
                   alt="shows-3"
-                  class="shows__row__more__item__image"
+                  class="shows-item__image"
                 />
-                <div class="shows__row__more__item__about">
-                  <h3 class="shows__row__more__item__about__title">
-                    Не Рим, не Троя
-                  </h3>
-                  <p class="shows__row__more__item__about__subtitle">
-                    По вторникам в 12:00
-                  </p>
-                  <div class="shows__row__more__item__about__link">
+                <div class="shows-item__about">
+                  <h3 class="shows-item__title">Не Рим, не Троя</h3>
+                  <p class="shows-item__subtitle">По вторникам в 12:00</p>
+                  <div class="shows-item__link">
                     Подробнее
 
                     <svg
@@ -1915,21 +1900,19 @@
                 </div>
               </div>
               <div
-                class="shows__row__more__item"
+                class="shows-item"
                 aria-label="Передача. Эрудит. По пятницам в 17:00"
                 tabindex="0"
               >
                 <img
                   src="img/shows-4.png"
                   alt="shows-4"
-                  class="shows__row__more__item__image"
+                  class="shows-item__image"
                 />
-                <div class="shows__row__more__item__about">
-                  <h3 class="shows__row__more__item__about__title">Эрудит</h3>
-                  <p class="shows__row__more__item__about__subtitle">
-                    По пятницам в 17:00
-                  </p>
-                  <div class="shows__row__more__item__about__link">
+                <div class="shows-item__about">
+                  <h3 class="shows-item__title">Эрудит</h3>
+                  <p class="shows-item__subtitle">По пятницам в 17:00</p>
+                  <div class="shows-item__link">
                     Подробнее
 
                     <svg
@@ -1948,23 +1931,19 @@
                 </div>
               </div>
               <div
-                class="shows__row__more__item"
+                class="shows-item"
                 aria-label="Передача. Тонкости эпох. По субботам в 10:00"
                 tabindex="0"
               >
                 <img
                   src="img/shows-5.png"
                   alt="shows-5"
-                  class="shows__row__more__item__image"
+                  class="shows-item__image"
                 />
-                <div class="shows__row__more__item__about">
-                  <h3 class="shows__row__more__item__about__title">
-                    Тонкости эпох
-                  </h3>
-                  <p class="shows__row__more__item__about__subtitle">
-                    По субботам в 10:00
-                  </p>
-                  <div class="shows__row__more__item__about__link">
+                <div class="shows-item__about">
+                  <h3 class="shows-item__title">Тонкости эпох</h3>
+                  <p class="shows-item__subtitle">По субботам в 10:00</p>
+                  <div class="shows-item__link">
                     Подробнее
 
                     <svg
@@ -1983,23 +1962,19 @@
                 </div>
               </div>
               <div
-                class="shows__row__more__item"
+                class="shows-item"
                 aria-label="Передача. Живые мысли. По воскресеньям в 15:30"
                 tabindex="0"
               >
                 <img
                   src="img/shows-6.png"
                   alt="shows-6"
-                  class="shows__row__more__item__image"
+                  class="shows-item__image"
                 />
-                <div class="shows__row__more__item__about">
-                  <h3 class="shows__row__more__item__about__title">
-                    Живые мысли
-                  </h3>
-                  <p class="shows__row__more__item__about__subtitle">
-                    По воскресеньям в 15:30
-                  </p>
-                  <div class="shows__row__more__item__about__link">
+                <div class="shows-item__about">
+                  <h3 class="shows-item__title">Живые мысли</h3>
+                  <p class="shows-item__subtitle">По воскресеньям в 15:30</p>
+                  <div class="shows-item__link">
                     Подробнее
 
                     <svg
@@ -2021,10 +1996,10 @@
           </div>
         </div>
 
-        <div class="shows__row__archive__bottom mobile">
+        <div class="shows-mobile">
           <div class="container">
-            <button class="shows__row__archive__bottom__btn">Архив</button>
-            <p class="shows__row__archive__bottom__text">
+            <button class="shows-mobile__btn">Архив</button>
+            <p class="shows-mobile__text">
               В архив попадают все передачи, которые вы пропустили! Enjoy:)
             </p>
           </div>

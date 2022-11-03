@@ -113,7 +113,7 @@ function guestShowClick(event) {
 
 // -----------------------------------------------------------------------------------
 
-const element = document.querySelector(".shows__row__archive__top__select");
+const element = document.querySelector(".shows-archive__select");
 const choices = new Choices(element, {
   allowHTML: true,
   searchEnabled: false,

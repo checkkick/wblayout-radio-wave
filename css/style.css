@@ -237,7 +237,7 @@ body {
   height: 14px;
 }
 
-.header__main__flex {
+.header-main {
   position: relative;
   padding: 20px 0;
   display: flex;
@@ -250,7 +250,7 @@ body {
   color: #121723;
 }
 
-.header__main__flex__burger {
+.header-burger {
   cursor: pointer;
   position: relative;
   display: none;
@@ -259,7 +259,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.header__main__flex__burger__span {
+.header-burger__line {
   position: absolute;
   top: 10px;
   width: 24px;
@@ -267,7 +267,7 @@ body {
   background-color: #6d31ee;
   border-radius: 4px;
 }
-.header__main__flex__burger__span::before {
+.header-burger__line::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -277,7 +277,7 @@ body {
   background-color: #6d31ee;
   border-radius: 4px;
 }
-.header__main__flex__burger__span::after {
+.header-burger__line::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -288,18 +288,18 @@ body {
   border-radius: 4px;
 }
 
-.header__main__flex__logo {
+.header-main__logo {
   outline: none;
   text-decoration: none;
   padding: 0;
   margin: 0;
 }
-.header__main__flex__logo:focus-visible {
+.header-main__logo:focus-visible {
   outline: 2px solid #aa9dfa;
   outline-offset: 2px;
 }
 
-.header__main__flex__nav__list {
+.header-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -309,7 +309,7 @@ body {
   gap: 40px;
 }
 
-.header__main__flex__nav__list__item__link {
+.header-nav__link {
   text-decoration: none;
   margin: 0;
   outline: none;
@@ -317,43 +317,43 @@ body {
   padding: 4px 10px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-.header__main__flex__nav__list__item__link:hover {
+.header-nav__link:hover {
   color: #6d31ee;
 }
-.header__main__flex__nav__list__item__link:focus-visible {
+.header-nav__link:focus-visible {
   background-color: #aa9dfa;
   color: #ffffff;
 }
-.header__main__flex__nav__list__item__link:active {
+.header-nav__link:active {
   color: #4f28a5;
 }
 
-.header__main__flex__buttons {
+.header-buttons {
   display: flex;
   align-items: center;
   gap: 24px;
   position: relative;
 }
 
-.header__main__flex__buttons__search {
+.header-buttons__search {
   text-decoration: none;
   padding: 0;
   margin: 0;
   cursor: pointer;
   outline: none;
 }
-.header__main__flex__buttons__search svg path {
+.header-buttons__search svg path {
   transition: stroke 0.2s ease-in-out;
 }
-.header__main__flex__buttons__search:hover svg path,
-.header__main__flex__buttons__search:focus-visible svg path {
+.header-buttons__search:hover svg path,
+.header-buttons__search:focus-visible svg path {
   stroke: #aa9dfa;
 }
-.header__main__flex__buttons__search:active svg path {
+.header-buttons__search:active svg path {
   stroke: #4f28a5;
 }
 
-.header__main__flex__buttons__search__hidden {
+.header-buttons__search-hidden {
   display: none;
   position: absolute;
   overflow: hidden;
@@ -363,11 +363,11 @@ body {
   width: 278px;
   border-bottom: 1px solid #6d31ee;
 }
-.header__main__flex__buttons__search__hidden.active {
+.header-buttons__search-hidden--active {
   animation: 0.5s showEffectSearch ease-in-out;
   animation-fill-mode: forwards;
 }
-.header__main__flex__buttons__search__hidden.inactive {
+.header-buttons__search-hidden--inactive {
   animation: 0.5s hiddenEffectSearch ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -394,7 +394,7 @@ body {
   }
 }
 
-.header__main__flex__buttons__search__hidden__input {
+.header-buttons__input-hidden {
   padding: 5px 4px 3px 4px;
   background-color: transparent;
   width: 100%;
@@ -406,7 +406,7 @@ body {
   line-height: 16px;
   color: #121723;
 }
-.header__main__flex__buttons__search__hidden__input::placeholder {
+.header-buttons__input-hidden::placeholder {
   color: #a1a6b4;
 }
 
@@ -735,7 +735,7 @@ body {
   padding: 80px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.modal.active {
+.modal--active {
   display: flex;
   animation: 0.5s showEffectModal ease-in-out;
   animation-fill-mode: forwards;

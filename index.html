@@ -86,61 +86,37 @@
         </div>
 
         <div class="container">
-          <div class="header__main__flex">
-            <a
-              aria-label="Логотип W-Wave"
-              href="#!"
-              class="header__main__flex__logo"
-            >
+          <div class="header-main">
+            <a aria-label="Логотип W-Wave" href="#!" class="header-main__logo">
               <img src="img/logo.svg" alt="logo" />
             </a>
-            <div class="header__main__flex__burger" aria-label="Кнопка меню">
-              <span class="header__main__flex__burger__span"></span>
+            <div class="header-burger" aria-label="Кнопка меню">
+              <span class="header-burger__line"></span>
             </div>
-            <nav class="header__main__flex__nav">
-              <ul class="header__main__flex__nav__list">
-                <li class="header__main__flex__nav__list__item">
-                  <a
-                    href="#podcasts"
-                    class="header__main__flex__nav__list__item__link"
-                    >Подкасты</a
-                  >
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a href="#podcasts" class="header-nav__link">Подкасты</a>
                 </li>
-                <li class="header__main__flex__nav__list__item">
-                  <a
-                    href="#shows-section"
-                    class="header__main__flex__nav__list__item__link"
-                    >Передачи</a
-                  >
+                <li class="header-nav__item">
+                  <a href="#shows-section" class="header-nav__link">Передачи</a>
                 </li>
-                <li class="header__main__flex__nav__list__item">
-                  <a
-                    href="#guests"
-                    class="header__main__flex__nav__list__item__link"
-                    >Гости</a
-                  >
+                <li class="header-nav__item">
+                  <a href="#guests" class="header-nav__link">Гости</a>
                 </li>
-                <li class="header__main__flex__nav__list__item">
-                  <a
-                    href="#playlists"
-                    class="header__main__flex__nav__list__item__link"
-                    >Плейлисты</a
-                  >
+                <li class="header-nav__item">
+                  <a href="#playlists" class="header-nav__link">Плейлисты</a>
                 </li>
-                <li class="header__main__flex__nav__list__item">
-                  <a
-                    href="#about-us"
-                    class="header__main__flex__nav__list__item__link"
-                    >О нас</a
-                  >
+                <li class="header-nav__item">
+                  <a href="#about-us" class="header-nav__link">О нас</a>
                 </li>
               </ul>
             </nav>
-            <div class="header__main__flex__buttons">
+            <div class="header-buttons">
               <a
                 aria-label="Кнопка поиска"
                 href="#!"
-                class="header__main__flex__buttons__search"
+                class="header-buttons__search"
               >
                 <svg
                   width="24"
@@ -165,9 +141,11 @@
                   />
                 </svg>
               </a>
-              <div class="header__main__flex__buttons__search__hidden inactive">
+              <div
+                class="header-buttons__search-hidden header-buttons__search-hidden--inactive"
+              >
                 <input
-                  class="header__main__flex__buttons__search__hidden__input"
+                  class="header-buttons__input-hidden"
                   placeholder="Поиск по сайту"
                   aria-label="Поисковый ввод"
                   type="text"

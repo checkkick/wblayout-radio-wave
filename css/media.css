@@ -82,23 +82,23 @@
   .guests__about-text {
     max-width: 536px;
   }
-  .guests__row {
+  .guests-row {
     gap: 30px;
   }
-  .guests__row__accordion-list {
+  .guests-list {
     max-width: 539px;
   }
-  .guests__row__accordion-list__item__content__list {
+  .guests-list-users {
     gap: 12px 20px;
   }
-  .guests__row__accordion-list__item__content__list__item {
+  .guests-list-users__item {
     display: flex;
     width: calc((100% / 3) - (20px * 2) / 3);
   }
-  .guests__row__item-about__user {
+  .guests-about__user {
     max-width: 255px;
   }
-  .guests__row__item-about__user__image {
+  .guests-about__image {
     width: 100%;
   }
 
@@ -323,31 +323,31 @@
   .guests__about-text {
     margin-bottom: 52px;
   }
-  .guests__row {
+  .guests-row {
     flex-direction: column;
     margin-right: 0;
     gap: 48px;
   }
-  .guests__row__accordion-list {
+  .guests-list {
     max-width: none;
   }
-  .guests__row__item-about {
+  .guests-about {
     width: 100%;
   }
-  .guests__row__item-about__none-user {
+  .guests-about__none-user {
     max-width: none;
     width: 100%;
   }
-  .guests__row__item-about__user {
+  .guests-about__user {
     max-width: none;
   }
-  .guests__row__item-about__user__story {
+  .guests-about__story {
     max-width: 398px;
   }
-  .guests__row__accordion-list__item__content__list {
+  .guests-list-users {
     gap: 26px 20px;
   }
-  .guests__row__accordion-list__item__content__list__item__link {
+  .guests-list-users__link {
     letter-spacing: -0.3px;
   }
 
@@ -711,43 +711,43 @@
   .guests {
     padding: 54px 0;
   }
-  .guests__row {
+  .guests-row {
     gap: 35px;
   }
 
-  .guests__row__accordion-list__item__block {
+  .guests-list__item {
     padding: 0 0 2px 0;
   }
 
-  .guests__row__accordion-list__item__block__title {
+  .guests-list__title {
     font-size: 16px;
     line-height: 16px;
   }
-  .guests__row__accordion-list__item__block__arrow {
+  .guests-list__arrow {
     scale: 0.6;
     margin-right: -3px;
   }
-  .guests__row__accordion-list__item__content__list {
+  .guests-list-users {
     gap: 25px 32px;
     padding: 20px 0;
   }
-  .guests__row__accordion-list__item__content__list__item {
+  .guests-list-users__item {
     width: calc((100% / 2) - (45px * 1) / 2);
   }
-  .guests__row__accordion-list__item__content__list__item__link {
+  .guests-list-users__link {
     font-size: 14px;
     line-height: 110%;
   }
-  .guests__row__item-about__user__social {
+  .guests-about__social {
     margin-bottom: 13px;
     padding-left: 5px;
   }
-  .guests__row__item-about__user__social__link {
+  .guests-about__social-link {
     scale: 1.4;
     width: 30px;
     height: 30px;
   }
-  .guests__row__item-about__user__btn {
+  .guests-about__btn {
     padding: 8px 13px;
   }
 

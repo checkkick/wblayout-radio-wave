@@ -1565,13 +1565,13 @@ body {
   margin: 0 0 50px 0;
 }
 
-.guests__row {
+.guests-row {
   display: flex;
   gap: 25px;
   margin-right: -10px;
 }
 
-.guests__row__accordion-list {
+.guests-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1583,7 +1583,7 @@ body {
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-.guests__row__accordion-list__item__block {
+.guests-list__item {
   cursor: pointer;
   outline: none;
   width: 100%;
@@ -1596,46 +1596,44 @@ body {
   border-bottom: 1px solid #a1a6b4;
   margin-bottom: -1px;
 }
-.guests__row__accordion-list__item__block svg {
+.guests-list__item svg {
   transition: transform 0.3s ease-in-out;
 }
-.guests__row__accordion-list__item__block svg circle,
-.guests__row__accordion-list__item__block svg path {
+.guests-list__item svg circle,
+.guests-list__item svg path {
   transition: stroke 0.2s ease-in-out, fill 0.2s ease-in-out;
 }
-.guests__row__accordion-list__item__block:hover
-  .guests__row__accordion-list__item__block__title {
+.guests-list__item:hover .guests-list__title {
   color: #aa9dfa;
 }
-.guests__row__accordion-list__item__block:hover svg circle,
-.guests__row__accordion-list__item__block:hover svg path {
+.guests-list__item:hover svg circle,
+.guests-list__item:hover svg path {
   stroke: #aa9dfa;
 }
-.guests__row__accordion-list__item__block:focus-visible {
+.guests-list__item:focus-visible {
   background-color: #292e39;
 }
-.guests__row__accordion-list__item__block:active
-  .guests__row__accordion-list__item__block__title {
+.guests-list__item:active .guests-list__title {
   color: #aa9dfa;
 }
-.guests__row__accordion-list__item__block:active svg circle {
+.guests-list__item:active svg circle {
   fill: #aa9dfa;
   stroke: #aa9dfa;
 }
-.guests__row__accordion-list__item__block:active svg path {
+.guests-list__item:active svg path {
   stroke: #ffffff;
 }
 
-.guests__row__accordion-list__item__block-active {
+.guests-list__item-active {
   z-index: 1;
   border-color: #aa9dfa;
 }
 
-.guests__row__accordion-list__item__block-active svg {
+.guests-list__item-active svg {
   transform: rotate(180deg);
 }
 
-.guests__row__accordion-list__item__block__title {
+.guests-list__title {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -1645,22 +1643,22 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
-.guests__row__accordion-list__item__block__arrow {
+.guests-list__arrow {
   margin-right: 3px;
 }
 
-.guests__row__accordion-list__item__content {
+.guests-list__content {
   display: none;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
 
-.guests__row__accordion-list__item__content-active {
+.guests-list__content-active {
   display: block;
 }
 
-.guests__row__accordion-list__item__content__list {
+.guests-list-users {
   margin: 0 -5px;
   display: flex;
   padding: 32px 0 28px 0;
@@ -1670,11 +1668,11 @@ body {
   gap: 14px 20px;
 }
 
-.guests__row__accordion-list__item__content__list__item {
+.guests-list-users__item {
   width: calc((100% / 4) - (20px * 3) / 4);
 }
 
-.guests__row__accordion-list__item__content__list__item__link {
+.guests-list-users__link {
   padding: 2px 5px;
   outline: none;
   font-weight: 400;
@@ -1685,26 +1683,26 @@ body {
   margin: 0;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-.guests__row__accordion-list__item__content__list__item__link-active {
+.guests-list-users__link-active {
   color: #aa9dfa;
 }
-.guests__row__accordion-list__item__content__list__item__link:hover {
+.guests-list-users__link:hover {
   color: #6d31ee;
 }
-.guests__row__accordion-list__item__content__list__item__link:focus-visible,
-.guests__row__accordion-list__item__content__list__item__link-active:focus-visible {
+.guests-list-users__link:focus-visible,
+.guests-list-users__link-active:focus-visible {
   color: #ffffff;
   background-color: #aa9dfa;
 }
-.guests__row__accordion-list__item__content__list__item__link:active {
+.guests-list-users__link:active {
   color: #4f28a5;
 }
 
-.guests__row__item-about {
+.guests-about {
   width: 350px;
 }
 
-.guests__row__item-about__none-user {
+.guests-about__none-user {
   max-width: 345px;
   display: flex;
   align-items: center;
@@ -1713,7 +1711,7 @@ body {
   background-color: #292e39;
 }
 
-.guests__row__item-about__none-user__text {
+.guests-about__none-user-text {
   font-weight: 400;
   font-size: 16px;
   padding: 107px 0 0 0;
@@ -1723,7 +1721,7 @@ body {
   background: url("../img/none-user.svg") no-repeat top center / 97px;
 }
 
-.guests__row__item-about__user {
+.guests-about__user {
   max-width: 345px;
   width: 100%;
   display: flex;
@@ -1731,38 +1729,38 @@ body {
   align-items: stretch;
 }
 
-.guests__row__item-about__user__image {
+.guests-about__image {
   margin-bottom: 12px;
 }
 
-.guests__row__item-about__user__social {
+.guests-about__social {
   display: flex;
   align-items: center;
   gap: 34px;
   margin-bottom: 10px;
 }
 
-.guests__row__item-about__user__social__link {
+.guests-about__social-link {
   outline: none;
   text-decoration: none;
   padding: 0;
   margin: 0;
   color: #121723;
 }
-.guests__row__item-about__user__social__link svg path {
+.guests-about__social-link svg path {
   transition: fill 0.2s ease-in-out;
 }
-.guests__row__item-about__user__social__link:hover svg path {
+.guests-about__social-link:hover svg path {
   fill: #6d31ee;
 }
-.guests__row__item-about__user__social__link:focus-visible svg path {
+.guests-about__social-link:focus-visible svg path {
   fill: #aa9dfa;
 }
-.guests__row__item-about__user__social__link:active svg path {
+.guests-about__social-link:active svg path {
   fill: #4f28a5;
 }
 
-.guests__row__item-about__user__name {
+.guests-about__title {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -1771,7 +1769,7 @@ body {
   margin: 0 0 8px 0;
 }
 
-.guests__row__item-about__user__story {
+.guests-about__story {
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
@@ -1781,7 +1779,7 @@ body {
   letter-spacing: -0.1px;
 }
 
-.guests__row__item-about__user__btn {
+.guests-about__btn {
   align-self: flex-start;
   cursor: pointer;
   background: none;
@@ -1797,16 +1795,16 @@ body {
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
 }
-.guests__row__item-about__user__btn:hover {
+.guests-about__btn:hover {
   color: #ffffff;
   background-color: #aa9dfa;
 }
-.guests__row__item-about__user__btn:focus-visible {
+.guests-about__btn:focus-visible {
   color: #ffffff;
   background-color: #6d31ee;
   border-color: #6d31ee;
 }
-.guests__row__item-about__user__btn:active {
+.guests-about__btn:active {
   color: #ffffff;
   border-color: #4f28a5;
   background-color: #4f28a5;

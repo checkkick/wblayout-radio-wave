@@ -2562,7 +2562,7 @@ body {
   background-color: #292e39;
 }
 
-.footer__nav__mobile {
+.footer-mobile {
   display: none;
   padding: 30px 0;
   background-color: #121723;
@@ -2576,7 +2576,7 @@ body {
   margin-bottom: 90px;
 }
 
-.footer__row__links {
+.footer-links {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -2586,19 +2586,19 @@ body {
   color: #121723;
 }
 
-.footer__row__links__logo {
+.footer-links__logo {
   outline: none;
   text-decoration: none;
   padding: 0;
   margin: 0;
   color: #121723;
 }
-.footer__row__links__logo:focus-visible {
+.footer-links__logo:focus-visible {
   outline: 2px solid #aa9dfa;
   outline-offset: 2px;
 }
 
-.footer__row__links__social {
+.footer-social {
   display: flex;
   align-items: center;
   gap: 28px;
@@ -2608,27 +2608,27 @@ body {
   color: #121723;
 }
 
-.footer__row__links__social__logo {
+.footer-social__logo {
   outline: none;
   text-decoration: none;
   padding: 0;
   margin: 0;
   color: #121723;
 }
-.footer__row__links__social__logo svg path {
+.footer-social__logo svg path {
   transition: fill 0.2s ease-in-out;
 }
-.footer__row__links__social__logo:hover svg path {
+.footer-social__logo:hover svg path {
   fill: #6d31ee;
 }
-.footer__row__links__social__logo:focus-visible svg path {
+.footer-social__logo:focus-visible svg path {
   fill: #aa9dfa;
 }
-.footer__row__links__social__logo:active svg path {
+.footer-social__logo:active svg path {
   fill: #4f28a5;
 }
 
-.footer__row__nav__list {
+.footer-nav__list {
   max-width: 445px;
   list-style: none;
   display: flex;
@@ -2640,11 +2640,11 @@ body {
   margin: 0;
 }
 
-.footer__row__nav__list__item {
+.footer-nav__item {
   width: calc((100% / 3) - (125px * 2) / 3);
 }
 
-.footer__row__nav__list__item__link {
+.footer-nav__link {
   text-decoration: none;
   margin: 0;
   font-weight: 400;
@@ -2655,23 +2655,23 @@ body {
   padding: 4px 10px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-.footer__row__nav__list__item__link:hover {
+.footer-nav__link:hover {
   color: #6d31ee;
 }
-.footer__row__nav__list__item__link:focus-visible {
+.footer-nav__link:focus-visible {
   background-color: #aa9dfa;
   color: #ffffff;
 }
-.footer__row__nav__list__item__link:active {
+.footer-nav__link:active {
   color: #4f28a5;
 }
 
-.footer__copyright {
+.footer-copyright {
   padding: 25px 0 10px 0;
   background: url("../img/copyright.svg") no-repeat top center / 100%;
 }
 
-.footer__copyright__text {
+.footer-copyright__text {
   padding: 0;
   margin: 0 0 10px 0;
   text-align: center;

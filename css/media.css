@@ -699,14 +699,14 @@
     padding-top: 5px;
   }
   .podcasts-item__plays-count,
-  .podcasts__block__item__about__counters__likes,
-  .podcasts__block__item__about__counters__shares {
+  .podcasts-item__likes,
+  .podcasts-item__shares {
     font-size: 12px;
     line-height: 12px;
   }
   .podcasts-item__plays-count svg,
-  .podcasts__block__item__about__counters__likes svg,
-  .podcasts__block__item__about__counters__shares svg {
+  .podcasts-item__likes svg,
+  .podcasts-item__shares svg {
     scale: 0.8;
   }
   .podcasts__btn {

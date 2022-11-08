@@ -1117,7 +1117,7 @@ body {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.podcasts__block__item__about__counters__likes {
+.podcasts-item__likes {
   outline: none;
   font-size: 16px;
   line-height: 16px;
@@ -1131,7 +1131,7 @@ body {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.podcasts__block__item__about__counters__shares {
+.podcasts-item__shares {
   outline: none;
   font-size: 16px;
   line-height: 16px;
@@ -1145,39 +1145,39 @@ body {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 .podcasts-item__plays-count:hover,
-.podcasts__block__item__about__counters__likes:hover,
-.podcasts__block__item__about__counters__shares:hover {
+.podcasts-item__likes:hover,
+.podcasts-item__shares:hover {
   color: #6d31ee;
 }
 .podcasts-item__plays-count:focus-visible,
-.podcasts__block__item__about__counters__likes:focus-visible,
-.podcasts__block__item__about__counters__shares:focus-visible {
+.podcasts-item__likes:focus-visible,
+.podcasts-item__shares:focus-visible {
   color: #ffffff;
   background-color: #aa9dfa;
 }
 .podcasts-item__plays-count:active,
-.podcasts__block__item__about__counters__likes:active,
-.podcasts__block__item__about__counters__shares:active {
+.podcasts-item__likes:active,
+.podcasts-item__shares:active {
   color: #4f28a5;
 }
 .podcasts-item__plays-count svg path,
-.podcasts__block__item__about__counters__likes svg path,
-.podcasts__block__item__about__counters__shares svg path {
+.podcasts-item__likes svg path,
+.podcasts-item__shares svg path {
   transition: fill 0.2s ease-in-out;
 }
 .podcasts-item__plays-count:hover svg path,
-.podcasts__block__item__about__counters__likes:hover svg path,
-.podcasts__block__item__about__counters__shares:hover svg path {
+.podcasts-item__likes:hover svg path,
+.podcasts-item__shares:hover svg path {
   fill: #6d31ee;
 }
 .podcasts-item__plays-count:focus-visible svg path,
-.podcasts__block__item__about__counters__likes:focus-visible svg path,
-.podcasts__block__item__about__counters__shares:focus-visible svg path {
+.podcasts-item__likes:focus-visible svg path,
+.podcasts-item__shares:focus-visible svg path {
   fill: #ffffff;
 }
 .podcasts-item__plays-count:active svg path,
-.podcasts__block__item__about__counters__likes:active svg path,
-.podcasts__block__item__about__counters__shares:active svg path {
+.podcasts-item__likes:active svg path,
+.podcasts-item__shares:active svg path {
   fill: #4f28a5;
 }
 /* Shows */
